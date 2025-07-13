@@ -846,7 +846,7 @@
         </Point>
       </Placemark>
       <Placemark>
-        <name>50 Local - Direction Montréal</name>
+        <name>50LS1</name>
         <styleUrl>#line-EE9C96-5000-nodesc</styleUrl>
         <LineString>
           <tessellate>1</tessellate>
@@ -2428,7 +2428,7 @@
         </Point>
       </Placemark>
       <Placemark>
-        <name>50 Local - Direction Joliette</name>
+        <name>50LN1</name>
         <styleUrl>#line-DB4436-5000-nodesc</styleUrl>
         <LineString>
           <tessellate>1</tessellate>
@@ -3778,7 +3778,7 @@
         </Point>
       </Placemark>
       <Placemark>
-        <name>50 - Direction Montréal</name>
+        <name>50ES1</name>
         <styleUrl>#line-A61B4A-5263-nodesc</styleUrl>
         <LineString>
           <tessellate>1</tessellate>
@@ -5525,7 +5525,7 @@
         </Point>
       </Placemark>
       <Placemark>
-        <name>50 - Direction Joliette</name>
+        <name>50EN1</name>
         <styleUrl>#line-D698AD-5069-nodesc</styleUrl>
         <LineString>
           <tessellate>1</tessellate>
