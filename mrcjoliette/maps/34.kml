@@ -260,8 +260,7 @@
         </Point>
       </Placemark>
       <Placemark>
-        <name>86007 - St-Louis / St-Barthélémy
-</name>
+        <name>86007 - Rue St-Louis / Rue St-Barthélemy</name>
         <styleUrl>#icon-503-FFDD5E-nodesc</styleUrl>
         <Point>
           <coordinates>
@@ -280,7 +279,7 @@
         </Point>
       </Placemark>
       <Placemark>
-        <name>86071 - Cathédrale</name>
+        <name>86071 - Rue St-Charles-Borromée / Boul. Manseau (Devant la cathédrale)</name>
         <description>Rue St-Charles-Borromée</description>
         <styleUrl>#icon-503-FFDD5E</styleUrl>
         <Point>
@@ -290,8 +289,8 @@
         </Point>
       </Placemark>
       <Placemark>
-        <name>86092 - Mc Donald</name>
-        <description>St-Charles-Borromée</description>
+        <name>86092 - 585 Rue St-Charles-Borromée</name>
+        <description>McDonald's</description>
         <styleUrl>#icon-503-FFDD5E</styleUrl>
         <Point>
           <coordinates>
@@ -300,8 +299,7 @@
         </Point>
       </Placemark>
       <Placemark>
-        <name>86094 - Visitation / Ch. Du Golf E
-</name>
+        <name>86094 - Rue Visitation / Ch. Du Golf E</name>
         <description>Hôpital</description>
         <styleUrl>#icon-503-FFDD5E</styleUrl>
         <Point>
@@ -311,8 +309,8 @@
         </Point>
       </Placemark>
       <Placemark>
-        <name>86096 - Harnois</name>
-        <description>Rte 343 / 19e Ave</description>
+        <name>86096 - Rte 343 / 19e Avenue</name>
+        <description>Harnois</description>
         <styleUrl>#icon-503-FFDD5E</styleUrl>
         <Point>
           <coordinates>
@@ -321,8 +319,8 @@
         </Point>
       </Placemark>
       <Placemark>
-        <name>86100 - Dépanneur Kildare</name>
-        <description>1021 rte 343</description>
+        <name>86100 - 1021 Rte 343</name>
+        <description>Dépanneur Kildare</description>
         <styleUrl>#icon-503-FFDD5E</styleUrl>
         <Point>
           <coordinates>
@@ -331,7 +329,7 @@
         </Point>
       </Placemark>
       <Placemark>
-        <name>86102 - Rte 348 / rte 343</name>
+        <name>86102 - Rte 348 / Rte 343</name>
         <description>St-Ambroise-de-Kildare</description>
         <styleUrl>#icon-503-FFDD5E</styleUrl>
         <Point>
@@ -341,8 +339,8 @@
         </Point>
       </Placemark>
       <Placemark>
-        <name>86147 - IGA</name>
-        <description>Queen / 1ere Ave</description>
+        <name>86147 - Rue Queen / 1ère Avenue</name>
+        <description>IGA</description>
         <styleUrl>#icon-503-FFDD5E</styleUrl>
         <Point>
           <coordinates>
@@ -351,8 +349,8 @@
         </Point>
       </Placemark>
       <Placemark>
-        <name>86145 - Ultramar</name>
-        <description>Rue Queen / 4e Avenue</description>
+        <name>86145 - Rue Queen / 4e Avenue</name>
+        <description>Ultramar</description>
         <styleUrl>#icon-503-FFDD5E</styleUrl>
         <Point>
           <coordinates>
@@ -361,7 +359,7 @@
         </Point>
       </Placemark>
       <Placemark>
-        <name>86104 - Queen / 6e Avenue</name>
+        <name>86104 - Rue Queen / 6e Avenue</name>
         <description>Collège Champagneur</description>
         <styleUrl>#icon-503-FFDD5E</styleUrl>
         <Point>
@@ -371,8 +369,8 @@
         </Point>
       </Placemark>
       <Placemark>
-        <name>86107 - Restaurant Kenny</name>
-        <description>Queen / 11e Avenue</description>
+        <name>86107 - Rue Queen / 11e Avenue</name>
+        <description>Restaurant Kenny</description>
         <styleUrl>#icon-503-FFDD5E</styleUrl>
         <Point>
           <coordinates>
@@ -382,7 +380,7 @@
       </Placemark>
       <Placemark>
         <name>86314 - École secondaire des Chutes</name>
-        <description>3192, 18e Avenue)</description>
+        <description>3192, 18e Avenue</description>
         <styleUrl>#icon-503-FFDD5E</styleUrl>
         <Point>
           <coordinates>
@@ -1010,7 +1008,7 @@
         </Point>
       </Placemark>
       <Placemark>
-        <name>86142 - Queen / 13e Avenue</name>
+        <name>86142 - Rue Queen / 13e Avenue</name>
         <styleUrl>#icon-503-F4EB37-nodesc</styleUrl>
         <Point>
           <coordinates>
@@ -1019,7 +1017,7 @@
         </Point>
       </Placemark>
       <Placemark>
-        <name>86106 - Restaurant Kenny</name>
+        <name>86106 - Rue Queen / 11e Avenue</name>
         <description>Queen / 11e Avenue</description>
         <styleUrl>#icon-503-F4EB37</styleUrl>
         <Point>
@@ -1029,8 +1027,8 @@
         </Point>
       </Placemark>
       <Placemark>
-        <name>86105 - Queen / 6e Avenue</name>
-        <description>Collège Champagneur</description>
+        <name>86105 - Collège Champagneur</name>
+        <description>Queen / 6e Avenue</description>
         <styleUrl>#icon-503-F4EB37</styleUrl>
         <Point>
           <coordinates>
@@ -1039,8 +1037,8 @@
         </Point>
       </Placemark>
       <Placemark>
-        <name>86144 - Ultramar</name>
-        <description>Queen / 4e Avenue</description>
+        <name>86144 - Rue Queen / 4e Avenue</name>
+        <description>Ultramar</description>
         <styleUrl>#icon-503-F4EB37</styleUrl>
         <Point>
           <coordinates>
@@ -1049,8 +1047,8 @@
         </Point>
       </Placemark>
       <Placemark>
-        <name>86146 - IGA</name>
-        <description>Queen / 1ere Avenue</description>
+        <name>86146 - Rue Queen / 1ère Avenue</name>
+        <description>IGA</description>
         <styleUrl>#icon-503-F4EB37</styleUrl>
         <Point>
           <coordinates>
@@ -1068,8 +1066,8 @@
         </Point>
       </Placemark>
       <Placemark>
-        <name>86099 - Dépanneur Kildare</name>
-        <description>1021 rte 343</description>
+        <name>86099 - 1021 Rte 343</name>
+        <description>Dépanneur Kildare</description>
         <styleUrl>#icon-503-F4EB37</styleUrl>
         <Point>
           <coordinates>
@@ -1078,8 +1076,8 @@
         </Point>
       </Placemark>
       <Placemark>
-        <name>86097 - Harnois</name>
-        <description>Rte 343 / 19e Avenue</description>
+        <name>86097 - Rte 343 / 19e Avenue</name>
+        <description>Harnois</description>
         <styleUrl>#icon-503-F4EB37</styleUrl>
         <Point>
           <coordinates>
@@ -1088,8 +1086,7 @@
         </Point>
       </Placemark>
       <Placemark>
-        <name>86095 - Visitation / Ch. Du Golf O
-</name>
+        <name>86095 - Rue Visitation / Ch. Du Golf O</name>
         <description>Hôpital</description>
         <styleUrl>#icon-503-F4EB37</styleUrl>
         <Point>
@@ -1099,8 +1096,8 @@
         </Point>
       </Placemark>
       <Placemark>
-        <name>86093 - Mc Donald</name>
-        <description>585 St-Charles-Borromée</description>
+        <name>86093 - 585 Rue St-Charles-Borromée</name>
+        <description>McDonald's</description>
         <styleUrl>#icon-503-F4EB37</styleUrl>
         <Point>
           <coordinates>
@@ -1109,7 +1106,7 @@
         </Point>
       </Placemark>
       <Placemark>
-        <name>86070 - St-Charles-Borromée / Manseau</name>
+        <name>86070 - Rue St-Charles-Borromée / Boul. Manseau</name>
         <description>CEGEP</description>
         <styleUrl>#icon-503-F4EB37</styleUrl>
         <Point>

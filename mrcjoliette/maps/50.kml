@@ -510,8 +510,7 @@
         </Point>
       </Placemark>
       <Placemark>
-        <name>86008 - Rue St-Louis / Rue Gaspard
-</name>
+        <name>86008 - Rue St-Louis / Rue Gaspard</name>
         <description>Joliette</description>
         <styleUrl>#icon-503-EE9C96</styleUrl>
         <Point>
@@ -521,8 +520,7 @@
         </Point>
       </Placemark>
       <Placemark>
-        <name>86007 - Rue St-Louis / Rue St-Barthélemy
-</name>
+        <name>86007 - Rue St-Louis / Rue St-Barthélemy</name>
         <description>Joliette</description>
         <styleUrl>#icon-503-EE9C96</styleUrl>
         <Point>
@@ -542,7 +540,7 @@
         </Point>
       </Placemark>
       <Placemark>
-        <name>86002 - St-Louis / Ste-Anne</name>
+        <name>86002 - Rue St-Louis / Boul. Ste-Anne</name>
         <styleUrl>#icon-503-EE9C96-nodesc</styleUrl>
         <Point>
           <coordinates>
@@ -551,8 +549,7 @@
         </Point>
       </Placemark>
       <Placemark>
-        <name>86070 - Rue St-Charles-Borromés / Boul. Manseau
-</name>
+        <name>86070 - Rue St-Charles-Borromée / Boul. Manseau</name>
         <description>Joliette</description>
         <styleUrl>#icon-503-EE9C96</styleUrl>
         <Point>
@@ -562,8 +559,7 @@
         </Point>
       </Placemark>
       <Placemark>
-        <name>86408 - St-Charles-Borromée / Notre-Dame
-</name>
+        <name>86408 - Rue St-Charles-Borromée / Rue Notre-Dame</name>
         <styleUrl>#icon-503-EE9C96-nodesc</styleUrl>
         <Point>
           <coordinates>
@@ -572,8 +568,7 @@
         </Point>
       </Placemark>
       <Placemark>
-        <name>86399 - Rue De Lanaudière / Rue Lajoie
-</name>
+        <name>86399 - Rue de Lanaudière / Rue Lajoie</name>
         <description>Joliette</description>
         <styleUrl>#icon-503-EE9C96</styleUrl>
         <Point>
@@ -583,8 +578,7 @@
         </Point>
       </Placemark>
       <Placemark>
-        <name>86010 - Rue De Lanaudière / Rue St-Barthélemy
-</name>
+        <name>86010 - Rue de Lanaudière / Rue St-Barthélemy</name>
         <description>Joliette</description>
         <styleUrl>#icon-503-EE9C96</styleUrl>
         <Point>
@@ -594,8 +588,7 @@
         </Point>
       </Placemark>
       <Placemark>
-        <name>86027 - Rue De Lanaudière / Rue Gaspard
-</name>
+        <name>86027 - Rue de Lanaudière / Rue Gaspard</name>
         <description>Joliette</description>
         <styleUrl>#icon-503-EE9C96</styleUrl>
         <Point>
@@ -605,8 +598,7 @@
         </Point>
       </Placemark>
       <Placemark>
-        <name>86403 - Rue De Lanaudière / Rue St-Pierre
-</name>
+        <name>86403 - Rue de Lanaudière / Rue St-Pierre</name>
         <description>Joliette</description>
         <styleUrl>#icon-503-EE9C96</styleUrl>
         <Point>
@@ -616,8 +608,7 @@
         </Point>
       </Placemark>
       <Placemark>
-        <name>86011 - Rue De Lanaudière / Rue Sir Matthias-Tellier
-</name>
+        <name>86011 - Rue de Lanaudière / Rue Sir Matthias-Tellier</name>
         <description>Joliette</description>
         <styleUrl>#icon-503-EE9C96</styleUrl>
         <Point>
@@ -627,8 +618,7 @@
         </Point>
       </Placemark>
       <Placemark>
-        <name><![CDATA[86402 - Rue De Lanaudière / Boul. De L'Industrie
-]]></name>
+        <name><![CDATA[86402 - Rue de Lanaudière / Boul. de L'Industrie]]></name>
         <description>Joliette</description>
         <styleUrl>#icon-503-EE9C96</styleUrl>
         <Point>
@@ -638,7 +628,7 @@
         </Point>
       </Placemark>
       <Placemark>
-        <name><![CDATA[86333 - De l'Industrie / Des Tourelles]]></name>
+        <name><![CDATA[86333 - Boul. de l'Industrie / Rue des Tourelles]]></name>
         <styleUrl>#icon-503-EE9C96-nodesc</styleUrl>
         <Point>
           <coordinates>
@@ -647,7 +637,7 @@
         </Point>
       </Placemark>
       <Placemark>
-        <name><![CDATA[86335 - De l'Industrie / Royale]]></name>
+        <name><![CDATA[86335 - Boul. de l'Industrie / Rue Royale]]></name>
         <styleUrl>#icon-503-EE9C96-nodesc</styleUrl>
         <Point>
           <coordinates>
@@ -656,7 +646,7 @@
         </Point>
       </Placemark>
       <Placemark>
-        <name><![CDATA[86337 - De l'Industrie / Amyot]]></name>
+        <name><![CDATA[86337 - Boul. de l'Industrie / Rue Amyot]]></name>
         <styleUrl>#icon-503-EE9C96-nodesc</styleUrl>
         <Point>
           <coordinates>
@@ -665,8 +655,8 @@
         </Point>
       </Placemark>
       <Placemark>
-        <name>86014 - Église</name>
-        <description>Brassard / Curé-Dupont</description>
+        <name>86014 - Rue Brassard / Rue du Curé-Dupont</name>
+        <description>Église</description>
         <styleUrl>#icon-503-EE9C96</styleUrl>
         <Point>
           <coordinates>
@@ -702,7 +692,7 @@
         </Point>
       </Placemark>
       <Placemark>
-        <name>86022 - Viger / St-Jean</name>
+        <name>86022 - Ch. Viger / Ch. St-Jean</name>
         <styleUrl>#icon-503-EE9C96-nodesc</styleUrl>
         <Point>
           <coordinates>
@@ -720,7 +710,7 @@
         </Point>
       </Placemark>
       <Placemark>
-        <name><![CDATA[86373 - Boul. de l'Ange-Gardien / Ave. Adhémar-Raynault]]></name>
+        <name><![CDATA[86373 - Boul. de l'Ange-Gardien / Avenue Adhémar-Raynault]]></name>
         <styleUrl>#icon-503-EE9C96-nodesc</styleUrl>
         <Point>
           <coordinates>
@@ -729,8 +719,7 @@
         </Point>
       </Placemark>
       <Placemark>
-        <name><![CDATA[87179 - 2185 boul. De l'Ange-Gardien N.
-]]></name>
+        <name><![CDATA[87179 - 2185 Boul. de l'Ange-Gardien N.]]></name>
         <styleUrl>#icon-503-EE9C96-nodesc</styleUrl>
         <Point>
           <coordinates>
@@ -739,7 +728,7 @@
         </Point>
       </Placemark>
       <Placemark>
-        <name><![CDATA[87700 - Boul. de l'Ange-Gardien N. / Pierrot O.]]></name>
+        <name><![CDATA[87700 - Boul. de l'Ange-Gardien N. / Rue Pierrot O.]]></name>
         <styleUrl>#icon-503-EE9C96-nodesc</styleUrl>
         <Point>
           <coordinates>
@@ -748,8 +737,7 @@
         </Point>
       </Placemark>
       <Placemark>
-        <name><![CDATA[87903 - Boul. L'Ange-Gardien / St-Jean
-]]></name>
+        <name><![CDATA[87903 - Boul. L'Ange-Gardien / Rue St-Jean]]></name>
         <styleUrl>#icon-503-EE9C96-nodesc</styleUrl>
         <Point>
           <coordinates>
@@ -758,8 +746,7 @@
         </Point>
       </Placemark>
       <Placemark>
-        <name><![CDATA[87003 - Boul. L'Ange-Gardien / Des Pins
-]]></name>
+        <name><![CDATA[87003 - Boul. L'Ange-Gardien / Rue des Pins]]></name>
         <styleUrl>#icon-503-EE9C96-nodesc</styleUrl>
         <Point>
           <coordinates>
@@ -768,8 +755,7 @@
         </Point>
       </Placemark>
       <Placemark>
-        <name><![CDATA[87005 - Boul. L'Ange-Gardien / Martel
-]]></name>
+        <name><![CDATA[87005 - Boul. L'Ange-Gardien / Rue Martel]]></name>
         <styleUrl>#icon-503-EE9C96-nodesc</styleUrl>
         <Point>
           <coordinates>
@@ -806,8 +792,7 @@
         </Point>
       </Placemark>
       <Placemark>
-        <name><![CDATA[87905 - L'Ange-Gardien / Roquebrune
-]]></name>
+        <name><![CDATA[87905 - Boul. L'Ange-Gardien / Rue Roquebrune]]></name>
         <styleUrl>#icon-503-EE9C96-nodesc</styleUrl>
         <Point>
           <coordinates>
@@ -816,8 +801,7 @@
         </Point>
       </Placemark>
       <Placemark>
-        <name><![CDATA[87026 - Rte 341 / Rg. Bas-de-L'Assomption S
-]]></name>
+        <name><![CDATA[87026 - Rte 341 / Rg. Bas-de-L'Assomption S]]></name>
         <styleUrl>#icon-503-EE9C96-nodesc</styleUrl>
         <Point>
           <coordinates>
@@ -2085,8 +2069,7 @@
         </Point>
       </Placemark>
       <Placemark>
-        <name><![CDATA[87151 - Rte 341 / Rg. Bas-de-L'Assomption S.
-]]></name>
+        <name><![CDATA[87151 - Rte 341 / Rg. Bas-de-L'Assomption S.]]></name>
         <styleUrl>#icon-503-DB4436-nodesc</styleUrl>
         <Point>
           <coordinates>
@@ -2095,7 +2078,7 @@
         </Point>
       </Placemark>
       <Placemark>
-        <name><![CDATA[87863 - Boul. L'Ange-Gardien N. / Rocquebrune]]></name>
+        <name><![CDATA[87863 - Boul. L'Ange-Gardien N. / Rue Rocquebrune]]></name>
         <styleUrl>#icon-503-DB4436-nodesc</styleUrl>
         <Point>
           <coordinates>
@@ -2113,7 +2096,7 @@
         </Point>
       </Placemark>
       <Placemark>
-        <name><![CDATA[87159 - Boul. L'Ange-Gardien N. / Forest]]></name>
+        <name><![CDATA[87159 - Boul. L'Ange-Gardien N. / Rue Forest]]></name>
         <styleUrl>#icon-503-DB4436-nodesc</styleUrl>
         <Point>
           <coordinates>
@@ -2132,7 +2115,7 @@
         </Point>
       </Placemark>
       <Placemark>
-        <name><![CDATA[87165 - Boul. L'Ange-Gardien N. / Barret]]></name>
+        <name><![CDATA[87165 - Boul. L'Ange-Gardien N. / Rue Barret]]></name>
         <styleUrl>#icon-503-DB4436-nodesc</styleUrl>
         <Point>
           <coordinates>
@@ -2150,7 +2133,7 @@
         </Point>
       </Placemark>
       <Placemark>
-        <name><![CDATA[87171 - Boul. L'Ange-Gardien N. / Martel]]></name>
+        <name><![CDATA[87171 - Boul. L'Ange-Gardien N. / Rue Martel]]></name>
         <styleUrl>#icon-503-DB4436-nodesc</styleUrl>
         <Point>
           <coordinates>
@@ -2159,7 +2142,7 @@
         </Point>
       </Placemark>
       <Placemark>
-        <name><![CDATA[87173 - Boul. L'Ange-Gardien N. / Des Pins]]></name>
+        <name><![CDATA[87173 - Boul. L'Ange-Gardien N. / Rue des Pins]]></name>
         <styleUrl>#icon-503-DB4436-nodesc</styleUrl>
         <Point>
           <coordinates>
@@ -2168,7 +2151,7 @@
         </Point>
       </Placemark>
       <Placemark>
-        <name><![CDATA[87175 - L'Ange-Gardien N / St-Jean E]]></name>
+        <name><![CDATA[87175 - Boul. L'Ange-Gardien N / Rue St-Jean E]]></name>
         <styleUrl>#icon-503-DB4436-nodesc</styleUrl>
         <Point>
           <coordinates>
@@ -2177,7 +2160,7 @@
         </Point>
       </Placemark>
       <Placemark>
-        <name><![CDATA[86028 - Boul. De l'Ange-Gardien N. / Pierrot]]></name>
+        <name><![CDATA[86028 - Boul. de l'Ange-Gardien N. / Rue Pierrot]]></name>
         <styleUrl>#icon-503-DB4436-nodesc</styleUrl>
         <Point>
           <coordinates>
@@ -2186,8 +2169,7 @@
         </Point>
       </Placemark>
       <Placemark>
-        <name><![CDATA[87178 - en face du 2185 boul. De l'Ange-Gardien N.
-]]></name>
+        <name><![CDATA[87178 - Boul. de l'Ange-Gardien N. (Face au 2185)]]></name>
         <styleUrl>#icon-503-DB4436-nodesc</styleUrl>
         <Point>
           <coordinates>
@@ -2196,7 +2178,7 @@
         </Point>
       </Placemark>
       <Placemark>
-        <name><![CDATA[88014 - Boul. de l'Ange-Gardien N. / Adhémar-Raynault]]></name>
+        <name><![CDATA[88014 - Boul. de l'Ange-Gardien N. / Rue Adhémar-Raynault]]></name>
         <styleUrl>#icon-503-DB4436-nodesc</styleUrl>
         <Point>
           <coordinates>
@@ -2250,8 +2232,8 @@
         </Point>
       </Placemark>
       <Placemark>
-        <name>86015 - Église</name>
-        <description>Brassard / Curé-Dupont</description>
+        <name>86015 - Rue Brassard / Rue du Curé-Dupont</name>
+        <description>Église</description>
         <styleUrl>#icon-503-DB4436</styleUrl>
         <Point>
           <coordinates>
@@ -2260,7 +2242,7 @@
         </Point>
       </Placemark>
       <Placemark>
-        <name><![CDATA[86338 - Boul. de L'Industrie / Amyot]]></name>
+        <name><![CDATA[86338 - Boul. de L'Industrie / Rue Amyot]]></name>
         <styleUrl>#icon-503-DB4436-nodesc</styleUrl>
         <Point>
           <coordinates>
@@ -2269,7 +2251,7 @@
         </Point>
       </Placemark>
       <Placemark>
-        <name><![CDATA[86336 - Boul. de l'Industrie / Royale]]></name>
+        <name><![CDATA[86336 - Boul. de l'Industrie / Rue Royale]]></name>
         <styleUrl>#icon-503-DB4436-nodesc</styleUrl>
         <Point>
           <coordinates>
@@ -2278,7 +2260,7 @@
         </Point>
       </Placemark>
       <Placemark>
-        <name><![CDATA[86334 - Boul. de l'Industrie / Des Tourelles]]></name>
+        <name><![CDATA[86334 - Boul. de l'Industrie / Rue des Tourelles]]></name>
         <styleUrl>#icon-503-DB4436-nodesc</styleUrl>
         <Point>
           <coordinates>
@@ -2287,8 +2269,7 @@
         </Point>
       </Placemark>
       <Placemark>
-        <name><![CDATA[86326 - Rue De Lanaudière / Boul. De L'Industrie
-]]></name>
+        <name><![CDATA[86326 - Rue de Lanaudière / Boul. de L'Industrie]]></name>
         <description>Joliette</description>
         <styleUrl>#icon-503-DB4436</styleUrl>
         <Point>
@@ -2298,8 +2279,7 @@
         </Point>
       </Placemark>
       <Placemark>
-        <name>86005 - Rue De Lanaudière / Rue Sir Matthias-Tellier
-</name>
+        <name>86005 - Rue de Lanaudière / Rue Sir Matthias-Tellier</name>
         <description>Joliette</description>
         <styleUrl>#icon-503-DB4436</styleUrl>
         <Point>
@@ -2309,8 +2289,7 @@
         </Point>
       </Placemark>
       <Placemark>
-        <name>86404 - Rue De Lanaudière / Rue St-Pierre
-</name>
+        <name>86404 - Rue de Lanaudière / Rue St-Pierre</name>
         <description>Joliette</description>
         <styleUrl>#icon-503-DB4436</styleUrl>
         <Point>
@@ -2320,8 +2299,7 @@
         </Point>
       </Placemark>
       <Placemark>
-        <name>86003 - Rue De Lanaudière / Rue Gaspard
-</name>
+        <name>86003 - Rue de Lanaudière / Rue Gaspard</name>
         <description>Joliette</description>
         <styleUrl>#icon-503-DB4436</styleUrl>
         <Point>
@@ -2331,8 +2309,7 @@
         </Point>
       </Placemark>
       <Placemark>
-        <name>86165 - Rue De Lanaudière / Rue St-Barthélemy
-</name>
+        <name>86165 - Rue de Lanaudière / Rue St-Barthélemy</name>
         <description>Joliette</description>
         <styleUrl>#icon-503-DB4436</styleUrl>
         <Point>
@@ -2342,8 +2319,7 @@
         </Point>
       </Placemark>
       <Placemark>
-        <name>86400 - Rue De Lanaudière / Rue Lajoie
-</name>
+        <name>86400 - Rue de Lanaudière / Rue Lajoie</name>
         <description>Joliette</description>
         <styleUrl>#icon-503-DB4436</styleUrl>
         <Point>
@@ -2353,8 +2329,7 @@
         </Point>
       </Placemark>
       <Placemark>
-        <name>86310 - Rue Père Wilfrid-Corbeil / Stationnement du Cegep
-</name>
+        <name>86310 - Rue Wilfrid-Corbeil (Stationnement du Cégep)</name>
         <description>Joliette</description>
         <styleUrl>#icon-503-DB4436</styleUrl>
         <Point>
@@ -2364,8 +2339,7 @@
         </Point>
       </Placemark>
       <Placemark>
-        <name>86071 - Rue St-Charles-Borromée / Boul. Manseau (Devant la cathédrale)
-</name>
+        <name>86071 - Rue St-Charles-Borromée / Boul. Manseau (Devant la cathédrale)</name>
         <description>Joliette</description>
         <styleUrl>#icon-503-DB4436</styleUrl>
         <Point>
@@ -2375,8 +2349,7 @@
         </Point>
       </Placemark>
       <Placemark>
-        <name>86002 - Rue St-Louis / Boul. Ste-Anne
-</name>
+        <name>86002 - Rue St-Louis / Boul. Ste-Anne</name>
         <description>Joliette</description>
         <styleUrl>#icon-503-DB4436</styleUrl>
         <Point>
@@ -2396,8 +2369,7 @@
         </Point>
       </Placemark>
       <Placemark>
-        <name>86401 - Rue St-Louis / Rue St-Barthélemy
-</name>
+        <name>86401 - Rue St-Louis / Rue St-Barthélemy</name>
         <description>Joliette</description>
         <styleUrl>#icon-503-DB4436</styleUrl>
         <Point>
@@ -2407,8 +2379,7 @@
         </Point>
       </Placemark>
       <Placemark>
-        <name>86006 - Rue St-Louis / Rue Gaspard
-</name>
+        <name>86006 - Rue St-Louis / Rue Gaspard</name>
         <description>Joliette</description>
         <styleUrl>#icon-503-DB4436</styleUrl>
         <Point>
@@ -3659,8 +3630,7 @@
         </Point>
       </Placemark>
       <Placemark>
-        <name>86008 - Rue St-Louis / Rue Gaspard
-</name>
+        <name>86008 - Rue St-Louis / Rue Gaspard</name>
         <description>Joliette</description>
         <styleUrl>#icon-503-A61B4A</styleUrl>
         <Point>
@@ -3670,8 +3640,7 @@
         </Point>
       </Placemark>
       <Placemark>
-        <name>86007 - Rue St-Louis / Rue St-Barthélemy
-</name>
+        <name>86007 - Rue St-Louis / Rue St-Barthélemy</name>
         <description>Joliette</description>
         <styleUrl>#icon-503-A61B4A</styleUrl>
         <Point>
@@ -3691,7 +3660,7 @@
         </Point>
       </Placemark>
       <Placemark>
-        <name>86026 - St-Louis / Ste-Anne</name>
+        <name>86026 - Rue St-Louis / Boul. Ste-Anne</name>
         <styleUrl>#icon-503-A61B4A-nodesc</styleUrl>
         <Point>
           <coordinates>
@@ -3700,8 +3669,7 @@
         </Point>
       </Placemark>
       <Placemark>
-        <name>86070 - Rue St-Charles-Borromée / Boul. Manseau
-</name>
+        <name>86070 - Rue St-Charles-Borromée / Boul. Manseau</name>
         <description>Joliette</description>
         <styleUrl>#icon-503-A61B4A</styleUrl>
         <Point>
@@ -3711,7 +3679,7 @@
         </Point>
       </Placemark>
       <Placemark>
-        <name>86032 - Boul. Dollard / St-Thomas</name>
+        <name>86032 - Boul. Dollard / Rue St-Thomas</name>
         <styleUrl>#icon-503-A61B4A-nodesc</styleUrl>
         <Point>
           <coordinates>
@@ -3720,7 +3688,7 @@
         </Point>
       </Placemark>
       <Placemark>
-        <name>86030 - Boul. Dollard / Marguerite-Bourgeois</name>
+        <name>86030 - Boul. Dollard / Rue Marguerite-Bourgeoys</name>
         <styleUrl>#icon-503-A61B4A-nodesc</styleUrl>
         <Point>
           <coordinates>
@@ -3729,8 +3697,7 @@
         </Point>
       </Placemark>
       <Placemark>
-        <name>86029 - Ch. Lavaltrie / Sortie #2 (Côté Ouest)
-</name>
+        <name>86029 - Ch. Lavaltrie / Sortie #2 (Côté Ouest)</name>
         <description>Lavaltrie</description>
         <styleUrl>#icon-503-A61B4A</styleUrl>
         <Point>
@@ -3769,7 +3736,7 @@
         </Point>
       </Placemark>
       <Placemark>
-        <name>86408 - St-Charles-Borromée / Notre-Dame</name>
+        <name>86408 - Rue St-Charles-Borromée / Rue Notre-Dame</name>
         <styleUrl>#icon-503-A61B4A-nodesc</styleUrl>
         <Point>
           <coordinates>
@@ -5412,8 +5379,7 @@
         </Point>
       </Placemark>
       <Placemark>
-        <name>86186 - Stationnement Incitatif (Parc St-Antoine)
-</name>
+        <name>86186 - Stationnement Incitatif (Parc St-Antoine)</name>
         <description>Sortie #2 de la 31</description>
         <styleUrl>#icon-1423</styleUrl>
         <Point>
@@ -5423,8 +5389,7 @@
         </Point>
       </Placemark>
       <Placemark>
-        <name>86396 - Ch. Lavaltrie / Sortie #2 (côté Est)
-</name>
+        <name>86396 - Ch. Lavaltrie / Sortie #2 (Côté Est)</name>
         <description>Lavaltrie</description>
         <styleUrl>#icon-503-D698AD</styleUrl>
         <Point>
@@ -5434,7 +5399,7 @@
         </Point>
       </Placemark>
       <Placemark>
-        <name>86031 - Boul. Dollard / Marguerite-Bourgeois</name>
+        <name>86031 - Boul. Dollard / Rue Marguerite-Bourgeoys</name>
         <styleUrl>#icon-503-D698AD-nodesc</styleUrl>
         <Point>
           <coordinates>
@@ -5443,7 +5408,7 @@
         </Point>
       </Placemark>
       <Placemark>
-        <name>86033 - Boul. Dollard / St-Thomas</name>
+        <name>86033 - Boul. Dollard / Rue St-Thomas</name>
         <styleUrl>#icon-503-D698AD-nodesc</styleUrl>
         <Point>
           <coordinates>
@@ -5452,7 +5417,7 @@
         </Point>
       </Placemark>
       <Placemark>
-        <name>86310 - Wilfrid-Corbeil (Stationnement du Cégep)</name>
+        <name>86310 - Rue Wilfrid-Corbeil (Stationnement du Cégep)</name>
         <styleUrl>#icon-503-D698AD-nodesc</styleUrl>
         <Point>
           <coordinates>
@@ -5461,8 +5426,7 @@
         </Point>
       </Placemark>
       <Placemark>
-        <name>86071 - Rue St-Charles-Borromée / Boul. Manseau (Devant la Cathédrale)
-</name>
+        <name>86071 - Rue St-Charles-Borromée / Boul. Manseau (Devant la cathédrale)</name>
         <description>Joliette</description>
         <styleUrl>#icon-503-D698AD</styleUrl>
         <Point>
@@ -5472,8 +5436,7 @@
         </Point>
       </Placemark>
       <Placemark>
-        <name>86002 - Rue St-Louis / Boul. Ste-Anne
-</name>
+        <name>86002 - Rue St-Louis / Boul. Ste-Anne</name>
         <description>Joliette</description>
         <styleUrl>#icon-503-D698AD</styleUrl>
         <Point>
@@ -5493,8 +5456,7 @@
         </Point>
       </Placemark>
       <Placemark>
-        <name>86401 - Rue St-Louis / Rue St-Barthélemy
-</name>
+        <name>86401 - Rue St-Louis / Rue St-Barthélemy</name>
         <description>Joliette</description>
         <styleUrl>#icon-503-D698AD</styleUrl>
         <Point>
@@ -5504,8 +5466,7 @@
         </Point>
       </Placemark>
       <Placemark>
-        <name>86006 - Rue St-Louis / Rue Gaspard
-</name>
+        <name>86006 - Rue St-Louis / Rue Gaspard</name>
         <description>Joliette</description>
         <styleUrl>#icon-503-D698AD</styleUrl>
         <Point>

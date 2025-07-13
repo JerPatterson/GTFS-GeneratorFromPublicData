@@ -270,7 +270,7 @@
         </Point>
       </Placemark>
       <Placemark>
-        <name>83071 - St-Charles-Borromée (Face à la Cathédrale)</name>
+        <name>83071 - Rue St-Charles-Borromée (Face à la Cathédrale)</name>
         <styleUrl>#icon-503-B29189-nodesc</styleUrl>
         <Point>
           <coordinates>
@@ -279,7 +279,7 @@
         </Point>
       </Placemark>
       <Placemark>
-        <name>86318 - Galeries Joliette - Porte #1</name>
+        <name>86318 - Galeries Joliette (Porte #1)</name>
         <styleUrl>#icon-503-B29189-nodesc</styleUrl>
         <Point>
           <coordinates>
@@ -288,7 +288,7 @@
         </Point>
       </Placemark>
       <Placemark>
-        <name>86329 - Galeries Joliette - Porte #4</name>
+        <name>86329 - Galeries Joliette (Porte #4)</name>
         <styleUrl>#icon-503-B29189-nodesc</styleUrl>
         <Point>
           <coordinates>
@@ -297,7 +297,7 @@
         </Point>
       </Placemark>
       <Placemark>
-        <name>86330 - Galeries Joliette - Porte #6</name>
+        <name>86330 - Galeries Joliette (Porte #6)</name>
         <styleUrl>#icon-503-B29189-nodesc</styleUrl>
         <Point>
           <coordinates>
@@ -306,7 +306,7 @@
         </Point>
       </Placemark>
       <Placemark>
-        <name>86331 - Sears / Canadian Tire</name>
+        <name>86331 - Galeries Joliette (Canadian Tire)</name>
         <styleUrl>#icon-503-B29189-nodesc</styleUrl>
         <Point>
           <coordinates>
@@ -335,7 +335,7 @@
         </Point>
       </Placemark>
       <Placemark>
-        <name>86066 - Rte 131 / Principale</name>
+        <name>86066 - Rte 131 / Rue Principale</name>
         <description>Notre-Dame-de-Lourdes</description>
         <styleUrl>#icon-503-B29189</styleUrl>
         <Point>
@@ -345,8 +345,7 @@
         </Point>
       </Placemark>
       <Placemark>
-        <name>86263 - Ch. Joliette / Margot
-</name>
+        <name>86263 - Ch. Joliette / Rue Margot</name>
         <styleUrl>#icon-503-B29189-nodesc</styleUrl>
         <Point>
           <coordinates>
@@ -355,8 +354,7 @@
         </Point>
       </Placemark>
       <Placemark>
-        <name>86319 - Ch. Joliette / Principale
-</name>
+        <name>86319 - Ch. Joliette / Rue Principale</name>
         <description>Caisse Desjardins</description>
         <styleUrl>#icon-503-B29189</styleUrl>
         <Point>
@@ -366,8 +364,7 @@
         </Point>
       </Placemark>
       <Placemark>
-        <name>86060 - Henri-L-Chevrette / Michel
-</name>
+        <name>86060 - Rue Henri-L-Chevrette / Rue Michel</name>
         <styleUrl>#icon-503-B29189-nodesc</styleUrl>
         <Point>
           <coordinates>
@@ -376,7 +373,7 @@
         </Point>
       </Placemark>
       <Placemark>
-        <name>86059 - 1041 Louis-Cyr</name>
+        <name>86059 - 1041 Rue Louis-Cyr</name>
         <description>St-Jean-de-Matha</description>
         <styleUrl>#icon-503-B29189</styleUrl>
         <Point>
@@ -386,8 +383,7 @@
         </Point>
       </Placemark>
       <Placemark>
-        <name>86409 - Lessard / Laurent
-</name>
+        <name>86409 - Rue Lessard / Rue Laurent</name>
         <styleUrl>#icon-503-B29189-nodesc</styleUrl>
         <Point>
           <coordinates>
@@ -396,8 +392,7 @@
         </Point>
       </Placemark>
       <Placemark>
-        <name>86057 - 343 Principale
-</name>
+        <name>86057 - 343 Rue Principale</name>
         <description>350 rue Principale, Ste-Émélie</description>
         <styleUrl>#icon-503-B29189</styleUrl>
         <Point>
@@ -407,7 +402,7 @@
         </Point>
       </Placemark>
       <Placemark>
-        <name>86055 - 6010 Principale</name>
+        <name>86055 - 6010 Rue Principale</name>
         <description>Boulangerie St-Zénon</description>
         <styleUrl>#icon-503-B29189</styleUrl>
         <Point>
@@ -417,8 +412,7 @@
         </Point>
       </Placemark>
       <Placemark>
-        <name>86350 - 110 Brassard
-</name>
+        <name>86350 - 110 Rue Brassard</name>
         <description>St-Michel-des-Saints</description>
         <styleUrl>#icon-503-B29189</styleUrl>
         <Point>
@@ -428,7 +422,7 @@
         </Point>
       </Placemark>
       <Placemark>
-        <name>86322 - Des Aulnaies / Brassard</name>
+        <name>86322 - Rue des Aulnaies / Rue Brassard</name>
         <description>St-Michel-des-Saints</description>
         <styleUrl>#icon-503-B29189</styleUrl>
         <Point>
@@ -438,7 +432,7 @@
         </Point>
       </Placemark>
       <Placemark>
-        <name>86369 - 620 rue Matawin</name>
+        <name>86369 - 620 Rue Matawin</name>
         <description>St-Michel-des-Saints</description>
         <styleUrl>#icon-503-B29189</styleUrl>
         <Point>
@@ -3106,7 +3100,7 @@
     <Folder>
       <name>Circuit #32 - Direction Joliette</name>
       <Placemark>
-        <name>86367 - Matawin / Des Aulnaies</name>
+        <name>86367 - Rue Matawin / Rue des Aulnaies</name>
         <description>St-Michel-des-saints</description>
         <styleUrl>#icon-503-795046</styleUrl>
         <Point>
@@ -3116,7 +3110,7 @@
         </Point>
       </Placemark>
       <Placemark>
-        <name>86323 - Des Aulnaies / Brassard</name>
+        <name>86323 - Rue des Aulnaies / Rue Brassard</name>
         <description>St-Michel-des-Saints</description>
         <styleUrl>#icon-503-795046</styleUrl>
         <Point>
@@ -3126,8 +3120,7 @@
         </Point>
       </Placemark>
       <Placemark>
-        <name>86321 - Face au 441 Brassard
-</name>
+        <name>86321 - Rue Brassard (Face au 441)</name>
         <description>St-Michel-des-Saints</description>
         <styleUrl>#icon-503-795046</styleUrl>
         <Point>
@@ -3137,8 +3130,7 @@
         </Point>
       </Placemark>
       <Placemark>
-        <name>86350 - 110 Rue Brassard
-</name>
+        <name>86350 - 110 Rue Brassard</name>
         <description>St-Michel-des-Saints</description>
         <styleUrl>#icon-503-795046</styleUrl>
         <Point>
@@ -3148,7 +3140,7 @@
         </Point>
       </Placemark>
       <Placemark>
-        <name>86054 - 6031 Principale</name>
+        <name>86054 - 6031 Rue Principale</name>
         <description>En face de Boulangerie St-Zénon</description>
         <styleUrl>#icon-503-795046</styleUrl>
         <Point>
@@ -3158,8 +3150,7 @@
         </Point>
       </Placemark>
       <Placemark>
-        <name>86056 - 343 Principale
-</name>
+        <name>86056 - 343 Rue Principale</name>
         <description>350 Principale, Ste-Émélie</description>
         <styleUrl>#icon-503-795046</styleUrl>
         <Point>
@@ -3169,8 +3160,7 @@
         </Point>
       </Placemark>
       <Placemark>
-        <name>86410 - Lessard / Laurent
-</name>
+        <name>86410 - Rue Lessard / Rue Laurent</name>
         <styleUrl>#icon-503-795046-nodesc</styleUrl>
         <Point>
           <coordinates>
@@ -3179,7 +3169,7 @@
         </Point>
       </Placemark>
       <Placemark>
-        <name>86058 - 1041 Louis-Cyr</name>
+        <name>86058 - 1041 Rue Louis-Cyr</name>
         <description>St-Jean-de-Matha</description>
         <styleUrl>#icon-503-795046</styleUrl>
         <Point>
@@ -3189,8 +3179,7 @@
         </Point>
       </Placemark>
       <Placemark>
-        <name>86060 - Henri-L-Chevrette / Michel
-</name>
+        <name>86060 - Rue Henri-L-Chevrette / Rue Michel</name>
         <styleUrl>#icon-503-795046-nodesc</styleUrl>
         <Point>
           <coordinates>
@@ -3199,8 +3188,7 @@
         </Point>
       </Placemark>
       <Placemark>
-        <name>86320 - Principale / Ch. Joliette
-</name>
+        <name>86320 - Rue Principale / Ch. Joliette</name>
         <description>St-Félix-de-Valois</description>
         <styleUrl>#icon-503-795046</styleUrl>
         <Point>
@@ -3210,8 +3198,7 @@
         </Point>
       </Placemark>
       <Placemark>
-        <name>86260 - Ch. Joliette / Beaux-Arts
-</name>
+        <name>86260 - Ch. Joliette / Rue des Beaux-Arts</name>
         <styleUrl>#icon-503-795046-nodesc</styleUrl>
         <Point>
           <coordinates>
@@ -3220,7 +3207,7 @@
         </Point>
       </Placemark>
       <Placemark>
-        <name>86067 - Rte 131 / Principale</name>
+        <name>86067 - Rte 131 / Rue Principale</name>
         <description>Notre-Dame-de-Lourdes</description>
         <styleUrl>#icon-503-795046</styleUrl>
         <Point>
@@ -3250,7 +3237,7 @@
         </Point>
       </Placemark>
       <Placemark>
-        <name>86070 - St-Charles-Borromée / Manseau</name>
+        <name>86070 - Rue St-Charles-Borromée / Boul. Manseau</name>
         <description>CEGEP</description>
         <styleUrl>#icon-503-795046</styleUrl>
         <Point>
@@ -3260,7 +3247,7 @@
         </Point>
       </Placemark>
       <Placemark>
-        <name>86228 - St-Louis / St-Joseph</name>
+        <name>86228 - Terminus St-Louis</name>
         <description>Terminus CTJM</description>
         <styleUrl>#icon-503-795046</styleUrl>
         <Point>

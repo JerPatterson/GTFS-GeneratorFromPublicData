@@ -316,7 +316,7 @@
     <Folder>
       <name>Circuit #131-138 - Direction Berthierville</name>
       <Placemark>
-        <name>86318 - Galeries Joliette - Porte #1</name>
+        <name>86318 - Galeries Joliette (Porte #1)</name>
         <styleUrl>#icon-503-9FC3FF-nodesc</styleUrl>
         <Point>
           <coordinates>
@@ -325,7 +325,7 @@
         </Point>
       </Placemark>
       <Placemark>
-        <name>86329 - Galeries Joliette - Porte #4</name>
+        <name>86329 - Galeries Joliette (Porte #4)</name>
         <styleUrl>#icon-503-9FC3FF-nodesc</styleUrl>
         <Point>
           <coordinates>
@@ -334,7 +334,7 @@
         </Point>
       </Placemark>
       <Placemark>
-        <name>86330 - Galeries Joliette - Porte #6</name>
+        <name>86330 - Galeries Joliette (Porte #6)</name>
         <styleUrl>#icon-503-9FC3FF-nodesc</styleUrl>
         <Point>
           <coordinates>
@@ -343,7 +343,7 @@
         </Point>
       </Placemark>
       <Placemark>
-        <name>86331 - Galeries Joliette - Canadian-Tire / Sears</name>
+        <name>86331 - Galeries Joliette (Canadian Tire)</name>
         <styleUrl>#icon-503-9FC3FF-nodesc</styleUrl>
         <Point>
           <coordinates>
@@ -372,8 +372,7 @@
         </Point>
       </Placemark>
       <Placemark>
-        <name>86070 - St-Charles-Borromée / Boul. Manseau (Cathédrale)
-</name>
+        <name>86070 - Rue St-Charles-Borromée / Boul. Manseau</name>
         <description>Joliette</description>
         <styleUrl>#icon-503-9FC3FF</styleUrl>
         <Point>
@@ -383,7 +382,7 @@
         </Point>
       </Placemark>
       <Placemark>
-        <name>86408 - St-Charles-Borromée / Notre-Dame</name>
+        <name>86408 - Rue St-Charles-Borromée / Rue Notre-Dame</name>
         <styleUrl>#icon-503-9FC3FF-nodesc</styleUrl>
         <Point>
           <coordinates>
@@ -392,7 +391,7 @@
         </Point>
       </Placemark>
       <Placemark>
-        <name>86186 - Stationnement incitatif (parc St-Antoine)</name>
+        <name>86186 - Stationnement Incitatif (Parc St-Antoine)</name>
         <description>Sortie #2 de la 31</description>
         <styleUrl>#icon-1423</styleUrl>
         <Point>
@@ -402,7 +401,7 @@
         </Point>
       </Placemark>
       <Placemark>
-        <name>86185 - Ch. Lavaltrie / Alain</name>
+        <name>86185 - Ch. Lavaltrie / Rue Alain</name>
         <styleUrl>#icon-503-9FC3FF-nodesc</styleUrl>
         <Point>
           <coordinates>
@@ -411,7 +410,7 @@
         </Point>
       </Placemark>
       <Placemark>
-        <name>86249 - St-Antoine / Pl. Giguère</name>
+        <name>86249 - Rue St-Antoine / Pl. Giguère</name>
         <styleUrl>#icon-503-9FC3FF-nodesc</styleUrl>
         <Point>
           <coordinates>
@@ -420,7 +419,7 @@
         </Point>
       </Placemark>
       <Placemark>
-        <name>86247 - St-Antoine / Jolibourg</name>
+        <name>86247 - Rue St-Antoine / Rue Jolibourg</name>
         <styleUrl>#icon-503-9FC3FF-nodesc</styleUrl>
         <Point>
           <coordinates>
@@ -429,7 +428,7 @@
         </Point>
       </Placemark>
       <Placemark>
-        <name>86183 - St-Antoine / Tricentenaire</name>
+        <name>86183 - Rue St-Antoine / Rue du Tricentenaire</name>
         <styleUrl>#icon-503-9FC3FF-nodesc</styleUrl>
         <Point>
           <coordinates>
@@ -438,7 +437,7 @@
         </Point>
       </Placemark>
       <Placemark>
-        <name>86181 - St-Antoine / Habel</name>
+        <name>86181 - Rue St-Antoine / Rue Habel</name>
         <styleUrl>#icon-503-9FC3FF-nodesc</styleUrl>
         <Point>
           <coordinates>
@@ -447,7 +446,7 @@
         </Point>
       </Placemark>
       <Placemark>
-        <name>86241 - Notre-Dame / Terr. Villeneuve</name>
+        <name>86241 - Rue Notre-Dame / Terr. Villeneuve</name>
         <styleUrl>#icon-503-9FC3FF-nodesc</styleUrl>
         <Point>
           <coordinates>
@@ -456,7 +455,7 @@
         </Point>
       </Placemark>
       <Placemark>
-        <name>86218 - Notre-Dame / Terr. De la Colombe</name>
+        <name>86218 - Rue Notre-Dame / Terr. De la Colombe</name>
         <styleUrl>#icon-503-9FC3FF-nodesc</styleUrl>
         <Point>
           <coordinates>
@@ -465,7 +464,7 @@
         </Point>
       </Placemark>
       <Placemark>
-        <name><![CDATA[86214 - Notre-Dame / Jardins-de-l'Aurore]]></name>
+        <name><![CDATA[86214 - Rue Notre-Dame / Rue des Jardins-de-l'Aurore]]></name>
         <styleUrl>#icon-503-9FC3FF-nodesc</styleUrl>
         <Point>
           <coordinates>
@@ -484,7 +483,7 @@
         </Point>
       </Placemark>
       <Placemark>
-        <name>86212 - Église et Centre Communautaire</name>
+        <name>86212 - Rue Notre-Dame (Face à l'église)</name>
         <description>Rue Picotte</description>
         <styleUrl>#icon-503-9FC3FF</styleUrl>
         <Point>
@@ -494,7 +493,7 @@
         </Point>
       </Placemark>
       <Placemark>
-        <name>86210 - Rte 138 / St-Paul</name>
+        <name>86210 - Rte 138 / Rue St-Paul</name>
         <styleUrl>#icon-503-9FC3FF-nodesc</styleUrl>
         <Point>
           <coordinates>
@@ -503,8 +502,7 @@
         </Point>
       </Placemark>
       <Placemark>
-        <name>86206 - Grande-Côte / De Grandpré
-</name>
+        <name>86206 - Grande-Côte / Rue de Grandpré</name>
         <description>Rte 138 / De Grandpré</description>
         <styleUrl>#icon-503-9FC3FF</styleUrl>
         <Point>
@@ -524,7 +522,7 @@
         </Point>
       </Placemark>
       <Placemark>
-        <name>86204 - Montcalm / Ave. Gilles-Villeneuve</name>
+        <name>86204 - Rue Montcalm / Ave. Gilles-Villeneuve</name>
         <styleUrl>#icon-503-9FC3FF-nodesc</styleUrl>
         <Point>
           <coordinates>
@@ -533,7 +531,7 @@
         </Point>
       </Placemark>
       <Placemark>
-        <name>86203 - Montcalm / De Bienville</name>
+        <name>86203 - Rue Montcalm / Rue de Bienville</name>
         <styleUrl>#icon-503-9FC3FF-nodesc</styleUrl>
         <Point>
           <coordinates>
@@ -3775,7 +3773,7 @@
         </Point>
       </Placemark>
       <Placemark>
-        <name>86202 - De Bienville / Montcalm</name>
+        <name>86202 - Rue de Bienville / Rue Montcalm</name>
         <styleUrl>#icon-503-3F5BA9-nodesc</styleUrl>
         <Point>
           <coordinates>
@@ -3784,7 +3782,7 @@
         </Point>
       </Placemark>
       <Placemark>
-        <name>86344 - Frontenac / Jacques-Cartier</name>
+        <name>86344 - Rue Frontenac / Rue Jacques-Cartier</name>
         <styleUrl>#icon-503-3F5BA9-nodesc</styleUrl>
         <Point>
           <coordinates>
@@ -3793,7 +3791,7 @@
         </Point>
       </Placemark>
       <Placemark>
-        <name>86345 - Frontenac / Pl. Du Marché</name>
+        <name>86345 - Rue Frontenac / Pl. Du Marché</name>
         <styleUrl>#icon-503-3F5BA9-nodesc</styleUrl>
         <Point>
           <coordinates>
@@ -3802,8 +3800,7 @@
         </Point>
       </Placemark>
       <Placemark>
-        <name>86347 Ste-Foy/ Frontenac
-</name>
+        <name>86346 - Rue Ste-Foy / Rue Frontenac</name>
         <styleUrl>#icon-503-3F5BA9-nodesc</styleUrl>
         <Point>
           <coordinates>
@@ -3812,7 +3809,7 @@
         </Point>
       </Placemark>
       <Placemark>
-        <name>86347 - Ste-Foy / Montcalm</name>
+        <name>86347 - Rue Ste-Foy / Rue Montcalm</name>
         <styleUrl>#icon-503-3F5BA9-nodesc</styleUrl>
         <Point>
           <coordinates>
@@ -3821,7 +3818,7 @@
         </Point>
       </Placemark>
       <Placemark>
-        <name>86348 - Montcalm / Crémazie</name>
+        <name>86348 - Rue Montcalm / Rue Crémazie</name>
         <styleUrl>#icon-503-3F5BA9-nodesc</styleUrl>
         <Point>
           <coordinates>
@@ -3830,7 +3827,7 @@
         </Point>
       </Placemark>
       <Placemark>
-        <name>86205 - Montcalm / Gilles-Villeneuve</name>
+        <name>86205 - Rue Montcalm / Avenue Gilles-Villeneuve</name>
         <styleUrl>#icon-503-3F5BA9-nodesc</styleUrl>
         <Point>
           <coordinates>
@@ -3839,7 +3836,7 @@
         </Point>
       </Placemark>
       <Placemark>
-        <name>86207 - Grande-Côte / De Grandpré</name>
+        <name>86207 - Grande-Côte / Rue de Grandpré</name>
         <styleUrl>#icon-503-3F5BA9-nodesc</styleUrl>
         <Point>
           <coordinates>
@@ -3848,7 +3845,7 @@
         </Point>
       </Placemark>
       <Placemark>
-        <name>86211 - Rte 138 / St-Paul</name>
+        <name>86211 - Rte 138 / Rue St-Paul</name>
         <styleUrl>#icon-503-3F5BA9-nodesc</styleUrl>
         <Point>
           <coordinates>
@@ -3857,7 +3854,7 @@
         </Point>
       </Placemark>
       <Placemark>
-        <name>86213 - Église / Centre Communautaire</name>
+        <name>86213 - Rue Notre-Dame (Devant l'église)</name>
         <description>361 rue Picotte</description>
         <styleUrl>#icon-503-3F5BA9</styleUrl>
         <Point>
@@ -3877,7 +3874,7 @@
         </Point>
       </Placemark>
       <Placemark>
-        <name><![CDATA[86215 - Notre-Dame / Jardins-de-l'Aurore]]></name>
+        <name><![CDATA[86215 - Rue Notre-Dame / Rue des Jardins-de-l'Aurore]]></name>
         <styleUrl>#icon-503-3F5BA9-nodesc</styleUrl>
         <Point>
           <coordinates>
@@ -3886,7 +3883,7 @@
         </Point>
       </Placemark>
       <Placemark>
-        <name>86219 - Notre-Dame / Des Saules</name>
+        <name>86219 - Rue Notre-Dame / Rue des Saules</name>
         <styleUrl>#icon-503-3F5BA9-nodesc</styleUrl>
         <Point>
           <coordinates>
@@ -3895,7 +3892,7 @@
         </Point>
       </Placemark>
       <Placemark>
-        <name>86240 - Notre-Dame / Des Jardins</name>
+        <name>86240 - Rue Notre-Dame / Rue des Jardins</name>
         <styleUrl>#icon-503-3F5BA9-nodesc</styleUrl>
         <Point>
           <coordinates>
@@ -3904,7 +3901,7 @@
         </Point>
       </Placemark>
       <Placemark>
-        <name>86180 - St-Antoine / Notre-Dame</name>
+        <name>86180 - Rue St-Antoine / Rue Notre-Dame</name>
         <styleUrl>#icon-503-3F5BA9-nodesc</styleUrl>
         <Point>
           <coordinates>
@@ -3913,7 +3910,7 @@
         </Point>
       </Placemark>
       <Placemark>
-        <name>86182 - St-Antoine / Tricentenaire</name>
+        <name>86182 - Rue St-Antoine / Rue du Tricentenaire</name>
         <styleUrl>#icon-503-3F5BA9-nodesc</styleUrl>
         <Point>
           <coordinates>
@@ -3922,7 +3919,7 @@
         </Point>
       </Placemark>
       <Placemark>
-        <name>86246 - St-Antoine / Jolibourg</name>
+        <name>86246 - Rue St-Antoine / Rue Jolibourg</name>
         <styleUrl>#icon-503-3F5BA9-nodesc</styleUrl>
         <Point>
           <coordinates>
@@ -3931,7 +3928,7 @@
         </Point>
       </Placemark>
       <Placemark>
-        <name>86248 - St-Antoine / Pl. Giguère</name>
+        <name>86248 - Rue St-Antoine / Pl. Giguère</name>
         <styleUrl>#icon-503-3F5BA9-nodesc</styleUrl>
         <Point>
           <coordinates>
@@ -3940,7 +3937,7 @@
         </Point>
       </Placemark>
       <Placemark>
-        <name>86184 - Ch. Lavaltrie / Alain</name>
+        <name>86184 - Ch. Lavaltrie / Rue Alain</name>
         <styleUrl>#icon-503-3F5BA9-nodesc</styleUrl>
         <Point>
           <coordinates>
@@ -3949,8 +3946,7 @@
         </Point>
       </Placemark>
       <Placemark>
-        <name>86186 - Stationnement incitatif (parc St-Antoine)
-</name>
+        <name>86186 - Stationnement Incitatif (Parc St-Antoine)</name>
         <description>Sortie #2 de la 31</description>
         <styleUrl>#icon-1423</styleUrl>
         <Point>
@@ -3960,7 +3956,7 @@
         </Point>
       </Placemark>
       <Placemark>
-        <name>86318 - Galeries Joliette - Porte #1</name>
+        <name>86318 - Galeries Joliette (Porte #1)</name>
         <styleUrl>#icon-503-3F5BA9-nodesc</styleUrl>
         <Point>
           <coordinates>
@@ -3969,7 +3965,7 @@
         </Point>
       </Placemark>
       <Placemark>
-        <name>86329 - Galeries Joliette - Porte #4</name>
+        <name>86329 - Galeries Joliette (Porte #4)</name>
         <styleUrl>#icon-503-3F5BA9-nodesc</styleUrl>
         <Point>
           <coordinates>
@@ -3978,7 +3974,7 @@
         </Point>
       </Placemark>
       <Placemark>
-        <name>86330 - Galeries Joliette - Porte #6</name>
+        <name>86330 - Galeries Joliette (Porte #6)</name>
         <styleUrl>#icon-503-3F5BA9-nodesc</styleUrl>
         <Point>
           <coordinates>
@@ -3987,7 +3983,7 @@
         </Point>
       </Placemark>
       <Placemark>
-        <name>86331 - Galeries Joliette - Sears / Canadian-Tire</name>
+        <name>86331 - Galeries Joliette (Canadian Tire)</name>
         <styleUrl>#icon-503-3F5BA9-nodesc</styleUrl>
         <Point>
           <coordinates>
@@ -3996,7 +3992,7 @@
         </Point>
       </Placemark>
       <Placemark>
-        <name>86310 - Rue Wilfrid-Corbeil</name>
+        <name>86310 - Rue Wilfrid-Corbeil (Stationnement du Cégep)</name>
         <description>Stationnement du Cégep</description>
         <styleUrl>#icon-503-3F5BA9</styleUrl>
         <Point>
@@ -4006,8 +4002,7 @@
         </Point>
       </Placemark>
       <Placemark>
-        <name>86071 - St-Charles-Borromée / Manseau (Cathédrale)
-</name>
+        <name>86071 - Rue St-Charles-Borromée / Boul. Manseau (Devant la cathédrale)</name>
         <description>Joliette</description>
         <styleUrl>#icon-503-3F5BA9</styleUrl>
         <Point>

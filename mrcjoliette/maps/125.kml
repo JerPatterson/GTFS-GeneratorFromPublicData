@@ -317,7 +317,7 @@
       <name>Circuit #125 - Direction Montréal</name>
       <Placemark>
         <name>86122 - Mont Garceau</name>
-        <description>190 ch. du Lac-Blanc</description>
+        <description>190 Ch. du Lac-Blanc</description>
         <styleUrl>#icon-503-7C3592</styleUrl>
         <Point>
           <coordinates>
@@ -336,8 +336,7 @@
         </Point>
       </Placemark>
       <Placemark>
-        <name>86125 - 856 Principale
-</name>
+        <name>86125 - 856 Rue Principale</name>
         <description>856 rue Principale</description>
         <styleUrl>#icon-503-7C3592</styleUrl>
         <Point>
@@ -347,8 +346,7 @@
         </Point>
       </Placemark>
       <Placemark>
-        <name>86397 - Rte 125 / Ch. Du Mont-de-la-Réserve (Ski La Réserve)
-</name>
+        <name>86397 - Rte 125 / Ch. Du Mont-de-la-Réserve (Ski La Réserve)</name>
         <description>St-Donat</description>
         <styleUrl>#icon-503-7C3592</styleUrl>
         <Point>
@@ -358,8 +356,7 @@
         </Point>
       </Placemark>
       <Placemark>
-        <name>86128 - 1933 Rte 125
-</name>
+        <name>86128 - 1933 Rte 125</name>
         <description>1933 rte 125</description>
         <styleUrl>#icon-503-7C3592</styleUrl>
         <Point>
@@ -378,9 +375,8 @@
         </Point>
       </Placemark>
       <Placemark>
-        <name><![CDATA[86130 - 2400 ch. D'Entrelacs
-]]></name>
-        <description><![CDATA[2400 ch. D'Entrelacs]]></description>
+        <name><![CDATA[86130 - 2400 Ch. D'Entrelacs]]></name>
+        <description><![CDATA[2400 Ch. D'Entrelacs]]></description>
         <styleUrl>#icon-503-7C3592</styleUrl>
         <Point>
           <coordinates>
@@ -398,8 +394,7 @@
         </Point>
       </Placemark>
       <Placemark>
-        <name>86171 - 7800 rte 125
-</name>
+        <name>86171 - 7800 Rte 125</name>
         <styleUrl>#icon-503-7C3592-nodesc</styleUrl>
         <Point>
           <coordinates>
@@ -408,7 +403,7 @@
         </Point>
       </Placemark>
       <Placemark>
-        <name><![CDATA[86134 - Principale / De l'Église]]></name>
+        <name><![CDATA[86134 - Rue Principale / Ch. de l'Église]]></name>
         <styleUrl>#icon-503-7C3592-nodesc</styleUrl>
         <Point>
           <coordinates>
@@ -417,7 +412,7 @@
         </Point>
       </Placemark>
       <Placemark>
-        <name>86136 - Principale / Curé-Paré</name>
+        <name>86136 - Rue Principale / Avenue du Curé-Paré</name>
         <styleUrl>#icon-503-7C3592-nodesc</styleUrl>
         <Point>
           <coordinates>
@@ -426,8 +421,7 @@
         </Point>
       </Placemark>
       <Placemark>
-        <name>86??2 - Principale, devant Uniprix
-</name>
+        <name>86??2 - Rue Principale (Devant Uniprix)</name>
         <styleUrl>#icon-503-7C3592-nodesc</styleUrl>
         <Point>
           <coordinates>
@@ -446,7 +440,7 @@
         </Point>
       </Placemark>
       <Placemark>
-        <name>86140 - Montcalm / Queen</name>
+        <name>86140 - Rue Montcalm / Rue Queen</name>
         <styleUrl>#icon-503-7C3592-nodesc</styleUrl>
         <Point>
           <coordinates>
@@ -455,7 +449,7 @@
         </Point>
       </Placemark>
       <Placemark>
-        <name>86142 - Queen / 13e Avenue</name>
+        <name>86142 - Rue Queen / 13e Avenue</name>
         <styleUrl>#icon-503-7C3592-nodesc</styleUrl>
         <Point>
           <coordinates>
@@ -464,8 +458,7 @@
         </Point>
       </Placemark>
       <Placemark>
-        <name>86106 - Queen / 11e Avenue
-</name>
+        <name>86106 - Rue Queen / 11e Avenue</name>
         <description>Queen / 11e Avenue</description>
         <styleUrl>#icon-503-7C3592</styleUrl>
         <Point>
@@ -485,8 +478,8 @@
         </Point>
       </Placemark>
       <Placemark>
-        <name>86144 - Ultramar</name>
-        <description>Queen / 4e Avenue</description>
+        <name>86144 - Rue Queen / 4e Avenue</name>
+        <description>Ultramar</description>
         <styleUrl>#icon-503-7C3592</styleUrl>
         <Point>
           <coordinates>
@@ -495,8 +488,8 @@
         </Point>
       </Placemark>
       <Placemark>
-        <name>86146 - IGA</name>
-        <description>Queen / 1ère Avenue</description>
+        <name>86146 - Rue Queen / 1ère Avenue</name>
+        <description>IGA</description>
         <styleUrl>#icon-503-7C3592</styleUrl>
         <Point>
           <coordinates>
@@ -505,8 +498,7 @@
         </Point>
       </Placemark>
       <Placemark>
-        <name>86148 - 3163 Rte 337
-</name>
+        <name>86148 - 3163 Rte 337</name>
         <description>3163 Rte 337</description>
         <styleUrl>#icon-503-7C3592</styleUrl>
         <Point>
@@ -516,8 +508,7 @@
         </Point>
       </Placemark>
       <Placemark>
-        <name>86150 - 2912 Rte 125
-</name>
+        <name>86150 - 2912 Rte 125</name>
         <description>2912 Rte 125</description>
         <styleUrl>#icon-503-7C3592</styleUrl>
         <Point>
@@ -527,8 +518,8 @@
         </Point>
       </Placemark>
       <Placemark>
-        <name>86152 - Ultramar</name>
-        <description>Rte 125 - Lac Lemenn</description>
+        <name>86152 - Rte 125 / Avenue du Lac Lemenn</name>
+        <description>Ultramar</description>
         <styleUrl>#icon-503-7C3592</styleUrl>
         <Point>
           <coordinates>
@@ -556,7 +547,7 @@
         </Point>
       </Placemark>
       <Placemark>
-        <name>86156 - Principale / Montcalm</name>
+        <name>86156 - Rue Principale / Rue Montcalm</name>
         <styleUrl>#icon-503-7C3592-nodesc</styleUrl>
         <Point>
           <coordinates>
@@ -574,7 +565,7 @@
         </Point>
       </Placemark>
       <Placemark>
-        <name>86363 - Rémi-Henri / Malo</name>
+        <name>86363 - Mtée Rémi-Henri / Rue Malo</name>
         <styleUrl>#icon-503-7C3592-nodesc</styleUrl>
         <Point>
           <coordinates>
@@ -583,7 +574,7 @@
         </Point>
       </Placemark>
       <Placemark>
-        <name>86365 - Claude-Hétu / Docteur Wilfrid-Locat</name>
+        <name>86365 - Rue Claude-Hétu / Rue du Docteur Wilfrid-Locat</name>
         <styleUrl>#icon-503-7C3592-nodesc</styleUrl>
         <Point>
           <coordinates>
@@ -592,7 +583,7 @@
         </Point>
       </Placemark>
       <Placemark>
-        <name>86364 - Face au 48 du Docteur Wilfrid-Locat</name>
+        <name>86364 - Rue du Docteur Wilfrid-Locat (Face au 48)</name>
         <styleUrl>#icon-503-7C3592-nodesc</styleUrl>
         <Point>
           <coordinates>
@@ -601,7 +592,7 @@
         </Point>
       </Placemark>
       <Placemark>
-        <name>86362 - 7 Docteur Wilfrid-Locat</name>
+        <name>86362 - 7 Rue du Docteur Wilfrid-Locat</name>
         <styleUrl>#icon-503-7C3592-nodesc</styleUrl>
         <Point>
           <coordinates>
@@ -610,8 +601,7 @@
         </Point>
       </Placemark>
       <Placemark>
-        <name>86162 - 260 Armand Majeau
-</name>
+        <name>86162 - 260 Rue Armand Majeau</name>
         <styleUrl>#icon-503-7C3592-nodesc</styleUrl>
         <Point>
           <coordinates>
@@ -647,7 +637,7 @@
         </Point>
       </Placemark>
       <Placemark>
-        <name>84023 - Aut. 25 / Larrey</name>
+        <name>84023 - Aut. 25 / Rue Larrey</name>
         <styleUrl>#icon-503-7C3592-nodesc</styleUrl>
         <Point>
           <coordinates>
@@ -6091,7 +6081,7 @@
         </Point>
       </Placemark>
       <Placemark>
-        <name>84022 - Aut. 25 / Larrey</name>
+        <name>84022 - Aut. 25 / Rue Larrey</name>
         <styleUrl>#icon-503-C6A4CF-nodesc</styleUrl>
         <Point>
           <coordinates>
@@ -6127,8 +6117,7 @@
         </Point>
       </Placemark>
       <Placemark>
-        <name>86163 - 260 Armand Majeau
-</name>
+        <name>86163 - 260 Rue Armand Majeau</name>
         <styleUrl>#icon-503-C6A4CF-nodesc</styleUrl>
         <Point>
           <coordinates>
@@ -6137,7 +6126,7 @@
         </Point>
       </Placemark>
       <Placemark>
-        <name>86160 - Face au 7 Docteur Wilfrid-Locat</name>
+        <name>86160 - Rue du Docteur Wilfrid-Locat (Face au 7)</name>
         <styleUrl>#icon-503-C6A4CF-nodesc</styleUrl>
         <Point>
           <coordinates>
@@ -6146,7 +6135,7 @@
         </Point>
       </Placemark>
       <Placemark>
-        <name>86366 - 48 Docteur Wilfrid-Locat</name>
+        <name>86366 - 48 Rue du Docteur Wilfrid-Locat</name>
         <styleUrl>#icon-503-C6A4CF-nodesc</styleUrl>
         <Point>
           <coordinates>
@@ -6155,7 +6144,7 @@
         </Point>
       </Placemark>
       <Placemark>
-        <name>86360 - Docteur Wilfrid-Locat / Claude-Hétu</name>
+        <name>86360 - Rue du Docteur Wilfrid-Locat / Rue Claude-Hétu</name>
         <styleUrl>#icon-503-C6A4CF-nodesc</styleUrl>
         <Point>
           <coordinates>
@@ -6164,7 +6153,7 @@
         </Point>
       </Placemark>
       <Placemark>
-        <name>86161 - Rémi-Henri / Malo</name>
+        <name>86161 - Mtée Rémi-Henri / Rue Malo</name>
         <styleUrl>#icon-503-C6A4CF-nodesc</styleUrl>
         <Point>
           <coordinates>
@@ -6182,7 +6171,7 @@
         </Point>
       </Placemark>
       <Placemark>
-        <name>86157 - Principale / Montcalm</name>
+        <name>86157 - Rue Principale / Rue Montcalm</name>
         <styleUrl>#icon-503-C6A4CF-nodesc</styleUrl>
         <Point>
           <coordinates>
@@ -6200,8 +6189,7 @@
         </Point>
       </Placemark>
       <Placemark>
-        <name>86153 - 1555-A Rte 125
-</name>
+        <name>86153 - 1555-A Rte 125</name>
         <description>Rte 125 / du Lac Lemenn</description>
         <styleUrl>#icon-503-C6A4CF</styleUrl>
         <Point>
@@ -6220,8 +6208,7 @@
         </Point>
       </Placemark>
       <Placemark>
-        <name>86149 - 3399 Queen
-</name>
+        <name>86149 - 3399 Rue Queen</name>
         <description>Rte 337</description>
         <styleUrl>#icon-503-C6A4CF</styleUrl>
         <Point>
@@ -6231,8 +6218,7 @@
         </Point>
       </Placemark>
       <Placemark>
-        <name>86147 - Queen / 1ère Avenue
-</name>
+        <name>86147 - Rue Queen / 1ère Avenue</name>
         <description>Queen / 1ere Avenue</description>
         <styleUrl>#icon-503-C6A4CF</styleUrl>
         <Point>
@@ -6242,8 +6228,7 @@
         </Point>
       </Placemark>
       <Placemark>
-        <name>86145 - Queen / 4e Avenue
-</name>
+        <name>86145 - Rue Queen / 4e Avenue</name>
         <description>Queen / 4e Avenue</description>
         <styleUrl>#icon-503-C6A4CF</styleUrl>
         <Point>
@@ -6253,7 +6238,7 @@
         </Point>
       </Placemark>
       <Placemark>
-        <name>86104 - Queen / 6e Avenue</name>
+        <name>86104 - Rue Queen / 6e Avenue</name>
         <description>Queen / 6e Avenue</description>
         <styleUrl>#icon-503-C6A4CF</styleUrl>
         <Point>
@@ -6263,7 +6248,7 @@
         </Point>
       </Placemark>
       <Placemark>
-        <name>86107 - Queen / 11e Avenue</name>
+        <name>86107 - Rue Queen / 11e Avenue</name>
         <description>Queen / 11e Avenue</description>
         <styleUrl>#icon-503-C6A4CF</styleUrl>
         <Point>
@@ -6273,7 +6258,7 @@
         </Point>
       </Placemark>
       <Placemark>
-        <name>86143 - Queen / 13e Avenue</name>
+        <name>86143 - Rue Queen / 13e Avenue</name>
         <styleUrl>#icon-503-C6A4CF-nodesc</styleUrl>
         <Point>
           <coordinates>
@@ -6282,7 +6267,7 @@
         </Point>
       </Placemark>
       <Placemark>
-        <name>86141 - Queen / Montcalm</name>
+        <name>86141 - Rue Queen / Montcalm</name>
         <styleUrl>#icon-503-C6A4CF-nodesc</styleUrl>
         <Point>
           <coordinates>
@@ -6301,8 +6286,7 @@
         </Point>
       </Placemark>
       <Placemark>
-        <name>86??1 - Face au Uniprix
-</name>
+        <name>86??1 - Rue Principale (Face au Uniprix)</name>
         <styleUrl>#icon-503-C6A4CF-nodesc</styleUrl>
         <Point>
           <coordinates>
@@ -6311,7 +6295,7 @@
         </Point>
       </Placemark>
       <Placemark>
-        <name>86137 - Principale / Curé-Paré</name>
+        <name>86137 - Rue Principale / Avenue du Curé-Paré</name>
         <styleUrl>#icon-503-C6A4CF-nodesc</styleUrl>
         <Point>
           <coordinates>
@@ -6320,7 +6304,7 @@
         </Point>
       </Placemark>
       <Placemark>
-        <name><![CDATA[86135 - Principale / De l'Église]]></name>
+        <name><![CDATA[86135 - Rue Principale / Ch. de l'Église]]></name>
         <styleUrl>#icon-503-C6A4CF-nodesc</styleUrl>
         <Point>
           <coordinates>
@@ -6329,8 +6313,7 @@
         </Point>
       </Placemark>
       <Placemark>
-        <name>86170 - 7800 Rte 125
-</name>
+        <name>86170 - 7800 Rte 125</name>
         <styleUrl>#icon-503-C6A4CF-nodesc</styleUrl>
         <Point>
           <coordinates>
@@ -6339,7 +6322,7 @@
         </Point>
       </Placemark>
       <Placemark>
-        <name>86133 / Rte 125 / Rte Pauzé</name>
+        <name>86133 - Rte 125 / Rte Pauzé</name>
         <styleUrl>#icon-503-C6A4CF-nodesc</styleUrl>
         <Point>
           <coordinates>
@@ -6348,8 +6331,8 @@
         </Point>
       </Placemark>
       <Placemark>
-        <name><![CDATA[86131 - 2400 ch. d'Entrelacs]]></name>
-        <description><![CDATA[2400 ch. d'Entrelacs]]></description>
+        <name><![CDATA[86131 - 2400 Ch. d'Entrelacs]]></name>
+        <description><![CDATA[2400 Ch. d'Entrelacs]]></description>
         <styleUrl>#icon-503-C6A4CF</styleUrl>
         <Point>
           <coordinates>
@@ -6377,8 +6360,7 @@
         </Point>
       </Placemark>
       <Placemark>
-        <name>86398 - Rte 125 / Ch. Redpath (Ski la Réserve)
-</name>
+        <name>86398 - Rte 125 / Ch. Redpath (Ski la Réserve)</name>
         <description>St-Donat</description>
         <styleUrl>#icon-503-C6A4CF</styleUrl>
         <Point>
@@ -6388,7 +6370,7 @@
         </Point>
       </Placemark>
       <Placemark>
-        <name>86124 - 849 Principale</name>
+        <name>86124 - 849 Rue Principale</name>
         <description>849 Principale</description>
         <styleUrl>#icon-503-C6A4CF</styleUrl>
         <Point>
@@ -6398,7 +6380,7 @@
         </Point>
       </Placemark>
       <Placemark>
-        <name>86127 - Informations Touristiques</name>
+        <name>86127 - Bureau Informations Touristiques</name>
         <description>536 rue Principale</description>
         <styleUrl>#icon-503-C6A4CF</styleUrl>
         <Point>
@@ -6409,7 +6391,7 @@
       </Placemark>
       <Placemark>
         <name>86122 - Mont Garceau</name>
-        <description>190 ch. du Lac-Blanc</description>
+        <description>190 Ch. du Lac-Blanc</description>
         <styleUrl>#icon-503-C6A4CF</styleUrl>
         <Point>
           <coordinates>
