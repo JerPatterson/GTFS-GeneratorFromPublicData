@@ -38,7 +38,7 @@ def extract_shapes_content_for_regional_routes() -> None:
     shape_txt_content += extract_shapes_content_for_regional_route("34")
     shape_txt_content += extract_shapes_content_for_regional_route("50")
     shape_txt_content += extract_shapes_content_for_regional_route("125")
-    shape_txt_content += extract_shapes_content_for_regional_route("131_138")
+    shape_txt_content += extract_shapes_content_for_regional_route("131138")
 
     with open(f"{GTFS_OUTPUT_PATH}/shapes.txt", "w") as f:
         f.write(shape_txt_content)

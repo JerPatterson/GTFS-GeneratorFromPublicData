@@ -29,7 +29,7 @@ def download_regional_routes_schedules():
     download_schedule_file(ROUTE_34_SCHEDULE_URL, "34")
     download_schedule_file(ROUTE_50_SCHEDULE_URL, "50")
     download_schedule_file(ROUTE_125_SCHEDULE_URL, "125")
-    download_schedule_file_from_google_drive(ROUTE_131_138_SCHEDULE_URL, "131_138")
+    download_schedule_file_from_google_drive(ROUTE_131_138_SCHEDULE_URL, "131138")
 
 
 def main():

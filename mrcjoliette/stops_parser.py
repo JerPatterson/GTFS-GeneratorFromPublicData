@@ -42,7 +42,7 @@ def extract_shapes_content_for_regional_routes() -> None:
     stops_txt_content += extract_shapes_content_for_regional_route(stops, "34")
     stops_txt_content += extract_shapes_content_for_regional_route(stops, "50")
     stops_txt_content += extract_shapes_content_for_regional_route(stops, "125")
-    stops_txt_content += extract_shapes_content_for_regional_route(stops, "131_138")
+    stops_txt_content += extract_shapes_content_for_regional_route(stops, "131138")
 
     with open(f"{GTFS_OUTPUT_PATH}/stops.txt", "w", encoding="utf-8") as f:
         f.write(stops_txt_content)
