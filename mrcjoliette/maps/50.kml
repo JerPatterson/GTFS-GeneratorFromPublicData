@@ -3679,6 +3679,15 @@
         </Point>
       </Placemark>
       <Placemark>
+        <name>86408 - Rue St-Charles-Borromée / Rue Notre-Dame</name>
+        <styleUrl>#icon-503-A61B4A-nodesc</styleUrl>
+        <Point>
+          <coordinates>
+            -73.4376276,46.0250757,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
         <name>86032 - Boul. Dollard / Rue St-Thomas</name>
         <styleUrl>#icon-503-A61B4A-nodesc</styleUrl>
         <Point>
@@ -3732,15 +3741,6 @@
         <Point>
           <coordinates>
             -73.539428,45.589371,0
-          </coordinates>
-        </Point>
-      </Placemark>
-      <Placemark>
-        <name>86408 - Rue St-Charles-Borromée / Rue Notre-Dame</name>
-        <styleUrl>#icon-503-A61B4A-nodesc</styleUrl>
-        <Point>
-          <coordinates>
-            -73.4376276,46.0250757,0
           </coordinates>
         </Point>
       </Placemark>
@@ -5379,22 +5379,22 @@
         </Point>
       </Placemark>
       <Placemark>
-        <name>86186 - Stationnement Incitatif (Parc St-Antoine)</name>
-        <description>Sortie #2 de la 31</description>
-        <styleUrl>#icon-1423</styleUrl>
-        <Point>
-          <coordinates>
-            -73.3316852,45.9232635,0
-          </coordinates>
-        </Point>
-      </Placemark>
-      <Placemark>
         <name>86396 - Ch. Lavaltrie / Sortie #2 (Côté Est)</name>
         <description>Lavaltrie</description>
         <styleUrl>#icon-503-D698AD</styleUrl>
         <Point>
           <coordinates>
             -73.3396317,45.9298694,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>86186 - Stationnement Incitatif (Parc St-Antoine)</name>
+        <description>Sortie #2 de la 31</description>
+        <styleUrl>#icon-1423</styleUrl>
+        <Point>
+          <coordinates>
+            -73.3316852,45.9232635,0
           </coordinates>
         </Point>
       </Placemark>
