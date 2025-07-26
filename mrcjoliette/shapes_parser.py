@@ -9,7 +9,7 @@ KML_NAMESPACE = {
 }
 
 
-def extract_shapes_content_for_regional_route(route_short_name: str) -> str:
+def extract_shapes_content_for_route(route_short_name: str) -> str:
     tree = ET.parse(f"{MAPS_PATH}/{route_short_name}.kml")
     root = tree.getroot()
 
@@ -30,23 +30,40 @@ def extract_shapes_content_for_regional_route(route_short_name: str) -> str:
     return shape_txt_content
 
 
-def extract_shapes_content_for_regional_routes() -> None:
-    os.makedirs(GTFS_OUTPUT_PATH, exist_ok=True)
-
+def extract_shapes_content_for_all_routes() -> None:
     shape_txt_content = "shape_id,shape_pt_lat,shape_pt_lon,shape_pt_sequence\n"
-    shape_txt_content += extract_shapes_content_for_regional_route("32")
-    shape_txt_content += extract_shapes_content_for_regional_route("34")
-    shape_txt_content += extract_shapes_content_for_regional_route("50")
-    shape_txt_content += extract_shapes_content_for_regional_route("125")
-    shape_txt_content += extract_shapes_content_for_regional_route("131138")
+    shape_txt_content += extract_shapes_content_for_local_routes()
+    shape_txt_content += extract_shapes_content_for_regional_routes()
 
+    os.makedirs(GTFS_OUTPUT_PATH, exist_ok=True)
     with open(f"{GTFS_OUTPUT_PATH}/shapes.txt", "w") as f:
         f.write(shape_txt_content)
 
 
+def extract_shapes_content_for_local_routes(shape_txt_content = "") -> str:
+    shape_txt_content += extract_shapes_content_for_route("A")
+    shape_txt_content += extract_shapes_content_for_route("B")
+    shape_txt_content += extract_shapes_content_for_route("C")
+    shape_txt_content += extract_shapes_content_for_route("D")
+    shape_txt_content += extract_shapes_content_for_route("E")
+    shape_txt_content += extract_shapes_content_for_route("X")
+
+    return shape_txt_content
+
+
+def extract_shapes_content_for_regional_routes(shape_txt_content = "") -> str:
+    shape_txt_content += extract_shapes_content_for_route("32")
+    shape_txt_content += extract_shapes_content_for_route("34")
+    shape_txt_content += extract_shapes_content_for_route("50")
+    shape_txt_content += extract_shapes_content_for_route("125")
+    shape_txt_content += extract_shapes_content_for_route("131138")
+
+    return shape_txt_content
+
+
 def main() -> None:
     print("Extracting shapes of routes...")
-    extract_shapes_content_for_regional_routes()
+    extract_shapes_content_for_all_routes()
 
 
 if __name__ == "__main__":

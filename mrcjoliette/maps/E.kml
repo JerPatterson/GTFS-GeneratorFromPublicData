@@ -73,7 +73,7 @@
       </Pair>
     </StyleMap>
     <Placemark>
-      <name>Circuit E</name>
+      <name>E1</name>
       <styleUrl>#line-F57C00-5000-nodesc</styleUrl>
       <LineString>
         <tessellate>1</tessellate>

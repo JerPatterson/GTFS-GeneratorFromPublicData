@@ -9,7 +9,7 @@ KML_NAMESPACE = {
 }
 
 
-def extract_shapes_content_for_regional_route(stops: set[str], route_short_name: str) -> str:
+def extract_stops_content_for_route(stops: set[str], route_short_name: str) -> str:
     print(f"Extracting stops for route: {route_short_name}...")
     tree = ET.parse(f"{MAPS_PATH}/{route_short_name}.kml")
     root = tree.getroot()
@@ -33,24 +33,41 @@ def extract_shapes_content_for_regional_route(stops: set[str], route_short_name:
     return stops_txt_content
 
 
-def extract_shapes_content_for_regional_routes() -> None:
-    os.makedirs(GTFS_OUTPUT_PATH, exist_ok=True)
-
-    stops = set()
+def extract_stops_content_for_all_routes() -> None:
     stops_txt_content = "stop_id,stop_code,stop_name,stop_lat,stop_lon\n"
-    stops_txt_content += extract_shapes_content_for_regional_route(stops, "32")
-    stops_txt_content += extract_shapes_content_for_regional_route(stops, "34")
-    stops_txt_content += extract_shapes_content_for_regional_route(stops, "50")
-    stops_txt_content += extract_shapes_content_for_regional_route(stops, "125")
-    stops_txt_content += extract_shapes_content_for_regional_route(stops, "131138")
+    stops_txt_content += extract_stops_content_for_local_routes()
+    stops_txt_content += extract_stops_content_for_regional_routes()
 
+    os.makedirs(GTFS_OUTPUT_PATH, exist_ok=True)
     with open(f"{GTFS_OUTPUT_PATH}/stops.txt", "w", encoding="utf-8") as f:
         f.write(stops_txt_content)
 
 
+def extract_stops_content_for_local_routes(stops_txt_content = "") -> str:
+    stops = set()
+    stops_txt_content += extract_stops_content_for_route(stops, "A")
+    stops_txt_content += extract_stops_content_for_route(stops, "B")
+    stops_txt_content += extract_stops_content_for_route(stops, "C")
+    stops_txt_content += extract_stops_content_for_route(stops, "D")
+    stops_txt_content += extract_stops_content_for_route(stops, "E")
+    stops_txt_content += extract_stops_content_for_route(stops, "X")
+
+    return stops_txt_content
+
+def extract_stops_content_for_regional_routes(stops_txt_content = "") -> str:
+    stops = set()
+    stops_txt_content += extract_stops_content_for_route(stops, "32")
+    stops_txt_content += extract_stops_content_for_route(stops, "34")
+    stops_txt_content += extract_stops_content_for_route(stops, "50")
+    stops_txt_content += extract_stops_content_for_route(stops, "125")
+    stops_txt_content += extract_stops_content_for_route(stops, "131138")
+
+    return stops_txt_content
+
+
 def main() -> None:
     print("Extracting stops of routes...")
-    extract_shapes_content_for_regional_routes()
+    extract_stops_content_for_all_routes()
 
 
 if __name__ == "__main__":
