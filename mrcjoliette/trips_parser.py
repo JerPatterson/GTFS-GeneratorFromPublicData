@@ -171,6 +171,22 @@ def get_shape_ids_from_timetables(route_short_name: str, timetables: list[list[l
     return shape_ids
 
 
+def extract_trips_content_for_local_route(route_short_name: str) -> str:
+    timetables: list[list[str | None]] = []
+    with pdfplumber.open(f"{SCHEDULES_PATH}/{route_short_name}.pdf") as pdf:
+        for page in pdf.pages:
+            tables = page.extract_tables()
+            for table in tables:
+                timetables.append(table)
+    print(f"Extracting trips for route {route_short_name}... ({len(timetables)} timetable found)")
+
+    trips_txt_content = ""
+    for i, timetable in enumerate(timetables):
+        for j in range(1, len(timetable[i][2:]) + 1):
+            trips_txt_content += f"{route_short_name},{"SEMAINE" if j < 3 else "REGULIER"},{route_short_name}D{j},,{j},{i},{route_short_name}DIR0V1\n"
+
+    return trips_txt_content
+
 def extract_trips_content_for_regional_route(route_short_name: str) -> str:
     timetables = extract_timetables_from_pdf(route_short_name)
 
@@ -196,6 +212,12 @@ def extract_trips_content_for_regional_route(route_short_name: str) -> str:
 
 def extract_trips_content_for_all_routes() -> None:
     trips_txt_content = "route_id,service_id,trip_id,trip_headsign,trip_short_name,direction_id,shape_id\n"
+    trips_txt_content += extract_trips_content_for_local_route("A")
+    trips_txt_content += extract_trips_content_for_local_route("B")
+    trips_txt_content += extract_trips_content_for_local_route("C")
+    trips_txt_content += extract_trips_content_for_local_route("D")
+    trips_txt_content += extract_trips_content_for_local_route("E")
+    trips_txt_content += extract_trips_content_for_local_route("X")
     trips_txt_content += extract_trips_content_for_regional_route("32")
     trips_txt_content += extract_trips_content_for_regional_route("34")
     trips_txt_content += extract_trips_content_for_regional_route("50")

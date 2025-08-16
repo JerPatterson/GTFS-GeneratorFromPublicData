@@ -86,6 +86,24 @@ def get_drop_off_types_from_timetables(timetables: list[list[list[str | None]]])
     return list(drop_off_types)
 
 
+def extract_stop_times_content_for_local_route(route_short_name: str) -> str:
+    timetables: list[list[str | None]] = []
+    with pdfplumber.open(f"{SCHEDULES_PATH}/{route_short_name}.pdf") as pdf:
+        for page in pdf.pages:
+            tables = page.extract_tables()
+            for table in tables:
+                timetables.append(table)
+    print(f"Extracting stop times for route {route_short_name}... ({len(timetables)} timetable found)")
+
+    stop_times_txt_content = ""
+    for timetable in timetables:
+        for i, row in enumerate(timetable[1:]):
+            stop_id = row[1]
+            for j, stop_time in enumerate(row[2:]):
+                stop_times_txt_content += f"{route_short_name}D{i + 1},{stop_time},{stop_time},{stop_id},{j + 1},0,0\n"
+
+    return stop_times_txt_content
+
 def extract_stop_times_content_for_regional_route(route_short_name: str) -> str:
     timetables = extract_timetables_from_pdf(route_short_name)
 
@@ -117,6 +135,12 @@ def extract_stop_times_content_for_regional_route(route_short_name: str) -> str:
 
 def extract_stop_times_content_for_all_routes() -> None:
     trips_txt_content = "trip_id,arrival_time,departure_time,stop_id,stop_sequence,pickup_type,drop_off_type\n"
+    trips_txt_content += extract_stop_times_content_for_local_route("A")
+    trips_txt_content += extract_stop_times_content_for_local_route("B")
+    trips_txt_content += extract_stop_times_content_for_local_route("C")
+    trips_txt_content += extract_stop_times_content_for_local_route("D")
+    trips_txt_content += extract_stop_times_content_for_local_route("E")
+    trips_txt_content += extract_stop_times_content_for_local_route("X")
     trips_txt_content += extract_stop_times_content_for_regional_route("32")
     trips_txt_content += extract_stop_times_content_for_regional_route("34")
     trips_txt_content += extract_stop_times_content_for_regional_route("50")
