@@ -2,10 +2,6 @@ import os
 
 GTFS_OUTPUT_PATH = "./output"
 
-KML_NAMESPACE = {
-    "kml": "http://www.opengis.net/kml/2.2"
-}
-
 
 def create_agency_content() -> None:
     os.makedirs(GTFS_OUTPUT_PATH, exist_ok=True)

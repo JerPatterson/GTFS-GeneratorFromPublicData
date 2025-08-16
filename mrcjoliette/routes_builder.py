@@ -2,10 +2,6 @@ import os
 
 GTFS_OUTPUT_PATH = "./output"
 
-KML_NAMESPACE = {
-    "kml": "http://www.opengis.net/kml/2.2"
-}
-
 
 def create_routes_content_for_all_routes() -> None:
     routes_txt_content = "route_id,agency_id,route_short_name,route_long_name,route_type,route_url,route_color,route_text_color\n"
