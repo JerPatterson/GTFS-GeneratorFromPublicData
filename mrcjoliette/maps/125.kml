@@ -656,7 +656,7 @@
         </Point>
       </Placemark>
       <Placemark>
-        <name>125S1</name>
+        <name>125DIR1V1</name>
         <styleUrl>#line-7C3592-4488-nodesc</styleUrl>
         <LineString>
           <tessellate>1</tessellate>
@@ -3939,7 +3939,7 @@
         </LineString>
       </Placemark>
       <Placemark>
-        <name>125S2</name>
+        <name>125DIR1V2</name>
         <styleUrl>#line-7C3592-4488-nodesc</styleUrl>
         <LineString>
           <tessellate>1</tessellate>
@@ -6400,7 +6400,7 @@
         </Point>
       </Placemark>
       <Placemark>
-        <name>125N1</name>
+        <name>125DIR0V1</name>
         <styleUrl>#line-C6A4CF-5650-nodesc</styleUrl>
         <LineString>
           <tessellate>1</tessellate>
@@ -9617,7 +9617,7 @@
         </LineString>
       </Placemark>
       <Placemark>
-        <name>125N2</name>
+        <name>125DIR0V2</name>
         <styleUrl>#line-C6A4CF-5000-nodesc</styleUrl>
         <LineString>
           <tessellate>1</tessellate>
@@ -11818,7 +11818,7 @@
         </LineString>
       </Placemark>
       <Placemark>
-        <name>125N3</name>
+        <name>125DIR0V3</name>
         <styleUrl>#line-C6A4CF-5000-nodesc</styleUrl>
         <LineString>
           <tessellate>1</tessellate>

@@ -442,7 +442,7 @@
         </Point>
       </Placemark>
       <Placemark>
-        <name>32N1</name>
+        <name>32DIR1V1</name>
         <styleUrl>#line-B29189-5000-nodesc</styleUrl>
         <LineString>
           <tessellate>1</tessellate>
@@ -2348,7 +2348,7 @@
         </LineString>
       </Placemark>
       <Placemark>
-        <name>32N2</name>
+        <name>32DIR1V2</name>
         <styleUrl>#line-B29189-5000-nodesc</styleUrl>
         <LineString>
           <tessellate>1</tessellate>
@@ -3267,7 +3267,7 @@
         </Point>
       </Placemark>
       <Placemark>
-        <name>32S1</name>
+        <name>32DIR0V1</name>
         <styleUrl>#line-795046-4100-nodesc</styleUrl>
         <LineString>
           <tessellate>1</tessellate>
@@ -5126,7 +5126,7 @@
         </LineString>
       </Placemark>
       <Placemark>
-        <name>32S2</name>
+        <name>32DIR0V2</name>
         <styleUrl>#line-795046-4100-nodesc</styleUrl>
         <LineString>
           <tessellate>1</tessellate>

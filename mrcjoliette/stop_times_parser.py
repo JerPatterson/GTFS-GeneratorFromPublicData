@@ -52,7 +52,7 @@ def get_stop_headsigns_from_timetables(timetables: list[list[list[str | None]]])
     stop_headsigns = []
 
     for timetable in timetables:
-        stop_headsigns.append([[""] * len(max(timetable, key=lambda x: len(x))) for _ in range(len(timetable))])
+        stop_headsigns.append([[""] * len(timetable[0]) for _ in range(len(timetable))])
         furthest_headsigns = ["NONE"] * len(timetable)
 
         for i, row in enumerate(timetable):

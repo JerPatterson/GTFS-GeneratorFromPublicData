@@ -1,5 +1,6 @@
 import os
 import pdfplumber
+import re
 
 SCHEDULES_PATH = "./schedules"
 GTFS_OUTPUT_PATH = "./output"
@@ -52,17 +53,17 @@ def get_service_id_from_name(name: str) -> str:
 def get_service_ids_from_timetables(timetables: list[list[list[str | None]]]) -> list[list[str]]:
     service_ids = []
 
-    for timetable in timetables:
-        service_ids.append([""] * len(timetable[0]))
+    for i, timetable in enumerate(timetables):
+        service_ids.append([""] * len(timetable[i]))
 
-        for i, row in enumerate(timetable):
+        for j, row in enumerate(timetable):
             if is_departure_header_row(row):
                 service_id = get_service_id_from_name("")
-                for j, service_name in enumerate(timetable[i-1]):
+                for k, service_name in enumerate(timetable[j-1]):
                     if service_name:
                         service_id = get_service_id_from_name(service_name)
-                    
-                    service_ids[-1][j] = service_id
+
+                    service_ids[-1][k] = service_id
 
                 break
 
@@ -71,8 +72,8 @@ def get_service_ids_from_timetables(timetables: list[list[list[str | None]]]) ->
 def get_trip_numbers_from_timetables(timetables: list[list[list[str | None]]]) -> list[list[str]]:
     trip_numbers = []
 
-    for timetable in timetables:
-        trip_numbers.append([""] * len(timetable[0]))
+    for i, timetable in enumerate(timetables):
+        trip_numbers.append([""] * len(timetable[i]))
 
         for row in timetable:
             if is_departure_header_row(row):
@@ -87,25 +88,25 @@ def get_trip_numbers_from_timetables(timetables: list[list[list[str | None]]]) -
 def get_trip_headsigns_from_timetables(timetables: list[list[list[str | None]]]) -> list[list[str]]:
     trip_headsigns = []
 
-    for timetable in timetables:
-        trip_headsigns.append([""] * len(timetable[0]))
-        furthest_headsigns = ["NONE"] * len(timetable[0])
+    for i, timetable in enumerate(timetables):
+        trip_headsigns.append([""] * len(timetable[i]))
+        furthest_headsigns = ["NONE"] * len(timetable[i])
 
-        for i, row in enumerate(timetable):
-            if i == 0:
+        for j, row in enumerate(timetable):
+            if j == 0:
                 if row[1] and (not row[0] or len(row[1]) > len(row[0])):
                     furthest_headsigns = [row[1].split(" ")[-1]] * len(row)
                 elif row[0]:
                     furthest_headsigns = [row[0].split(" ")[-1]] * len(row)
 
-            for j, value in enumerate(row):
+            for k, value in enumerate(row):
                 if not value and row[1] and (not row[0] or len(row[1]) > len(row[0])):
-                    furthest_headsigns[j] = row[1] if "/" not in row[1] else furthest_headsigns[j]
+                    furthest_headsigns[k] = row[1] if "/" not in row[1] else furthest_headsigns[k]
                 elif not value and row[0]:
-                    furthest_headsigns[j] = row[0] if "/" not in row[0] else furthest_headsigns[j]
+                    furthest_headsigns[k] = row[0] if "/" not in row[0] else furthest_headsigns[k]
 
                 if value and len(value) == 5:
-                    trip_headsigns[-1][j] = furthest_headsigns[j]
+                    trip_headsigns[-1][k] = furthest_headsigns[k]
 
     return trip_headsigns
 
@@ -125,6 +126,50 @@ def get_direction_ids_from_timetables(timetables: list[list[list[str | None]]]) 
 
     return direction_ids
 
+def get_stop_ids_of_trips_from_timetables(timetables: list[list[list[str | None]]]) -> list[list[list[str]]]:
+    stop_ids: list[list[list[str]]] = []
+    pattern_24hr = r"^(0[0-9]|1[0-9]|2[0-3]):[0-5][0-9]$"
+
+    for i, timetable in enumerate(timetables):
+        stop_ids.append([[] for _ in range(len(timetable[i]))])
+
+        for row in timetable:
+            stop_id = None
+            for j, value in enumerate(row):
+                if value and value.isnumeric() and len(value) == 5:
+                    stop_id = value
+
+                elif stop_id and value and re.match(pattern_24hr, value[0:5]):
+                    if len(value) > 5 and len(row) > j + 1 and not row[j + 1]:
+                        row[j + 1] = value[5:].strip()
+                        value = value[0:5]
+
+                    stop_ids[-1][j].append(stop_id)
+
+    return stop_ids
+
+def get_shape_ids_from_timetables(route_short_name: str, timetables: list[list[list[str | None]]]) -> list[str | None]:
+    shape_ids = []
+    stop_ids_of_trips = get_stop_ids_of_trips_from_timetables(timetables)
+
+    for i, timetable in enumerate(timetables):
+        shape_ids.append([""] * len(timetable[i]))
+
+        shape_id_by_stop_count = {}
+        unique_stop_counts = set(map(lambda x: len(x), stop_ids_of_trips[i]))
+        unique_stop_counts.remove(0)
+
+        for j, stop_count in enumerate(sorted(unique_stop_counts, reverse=True)):
+            shape_id_by_stop_count[stop_count] = f"{route_short_name}DIR{i}V{j + 1}"
+
+        for j, stop_ids in enumerate(stop_ids_of_trips[i]):
+            if len(stop_ids) in shape_id_by_stop_count:
+                shape_ids[i][j] = shape_id_by_stop_count[len(stop_ids)]
+            else:
+                shape_ids[i][j] = None
+
+    return shape_ids
+
 
 def extract_trips_content_for_regional_route(route_short_name: str) -> str:
     timetables = extract_timetables_from_pdf(route_short_name)
@@ -133,6 +178,7 @@ def extract_trips_content_for_regional_route(route_short_name: str) -> str:
     trip_numbers = get_trip_numbers_from_timetables(timetables)
     trip_headsigns = get_trip_headsigns_from_timetables(timetables)
     direction_ids = get_direction_ids_from_timetables(timetables)
+    shape_ids = get_shape_ids_from_timetables(route_short_name, timetables)
 
     # Hard coded because of the structure of its timetable
     if route_short_name == "131138":
@@ -140,9 +186,9 @@ def extract_trips_content_for_regional_route(route_short_name: str) -> str:
     
     trips_txt_content = ""
     for i in range(len(timetables)):
-        for service_id, trip_number, trip_headsign in zip(service_ids[i], trip_numbers[i], trip_headsigns[i]):
+        for service_id, trip_number, trip_headsign, shape_id in zip(service_ids[i], trip_numbers[i], trip_headsigns[i], shape_ids[i]):
             if trip_number and trip_number.isnumeric():
-                trips_txt_content += f"{route_short_name},{service_id},{route_short_name}D{trip_number},{trip_headsign},{trip_number},{direction_ids[i]},TODO\n"
+                trips_txt_content += f"{route_short_name},{service_id},{route_short_name}D{trip_number},{trip_headsign},{trip_number},{direction_ids[i]},{shape_id}\n"
 
 
     return trips_txt_content

@@ -389,7 +389,7 @@
         </Point>
       </Placemark>
       <Placemark>
-        <name>34O1</name>
+        <name>34DIR0V1</name>
         <styleUrl>#line-F8971B-5000-nodesc</styleUrl>
         <LineString>
           <tessellate>1</tessellate>
@@ -1136,7 +1136,7 @@
         </Point>
       </Placemark>
       <Placemark>
-        <name>34E1</name>
+        <name>34DIR1V1</name>
         <styleUrl>#line-F4EB37-4294-nodesc</styleUrl>
         <LineString>
           <tessellate>1</tessellate>

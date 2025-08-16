@@ -830,7 +830,7 @@
         </Point>
       </Placemark>
       <Placemark>
-        <name>50LS1</name>
+        <name>50DIR0V1</name>
         <styleUrl>#line-EE9C96-5000-nodesc</styleUrl>
         <LineString>
           <tessellate>1</tessellate>
@@ -2399,7 +2399,7 @@
         </Point>
       </Placemark>
       <Placemark>
-        <name>50LN1</name>
+        <name>50DIR0V1</name>
         <styleUrl>#line-DB4436-5000-nodesc</styleUrl>
         <LineString>
           <tessellate>1</tessellate>
@@ -3745,7 +3745,7 @@
         </Point>
       </Placemark>
       <Placemark>
-        <name>50ES1</name>
+        <name>50DIR0V2</name>
         <styleUrl>#line-A61B4A-5263-nodesc</styleUrl>
         <LineString>
           <tessellate>1</tessellate>
@@ -5486,7 +5486,7 @@
         </Point>
       </Placemark>
       <Placemark>
-        <name>50EN1</name>
+        <name>50DIR1V2</name>
         <styleUrl>#line-D698AD-5069-nodesc</styleUrl>
         <LineString>
           <tessellate>1</tessellate>
