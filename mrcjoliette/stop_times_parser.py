@@ -30,6 +30,28 @@ def extract_timetables_from_pdf(route_short_name: str) -> list[list[list[str | N
 
     return timetables
 
+def get_trip_headsigns_from_timetable(timetable: list[list[str | None]]) -> str:
+    trip_headsigns = [""] * len(timetable[0])
+    furthest_headsigns = ["NONE"] * len(timetable[0])
+    for i, row in enumerate(timetable):
+        if i == 0:
+            if timetable[0][1] and (not timetable[0][0] or len(timetable[0][1]) > len(timetable[0][0])):
+                furthest_headsigns = [timetable[0][1].split(" ")[-1]] * len(timetable[0])
+            elif timetable[0][0]:
+                furthest_headsigns = [timetable[0][0].split(" ")[-1]] * len(timetable[0])
+
+        for j, value in enumerate(row):
+            if not value and row[1] and (not row[0] or len(row[1]) > len(row[0])):
+                furthest_headsigns[j] = row[1] if "/" not in row[1] else furthest_headsigns[j]
+            elif not value and row[0]:
+                furthest_headsigns[j] = row[0] if "/" not in row[0] else furthest_headsigns[j]
+
+            if value and len(value) == 5:
+                trip_headsigns[j] = furthest_headsigns[j]
+
+    return trip_headsigns
+
+
 def extract_stop_times_content_for_regional_route(route_short_name: str) -> str:
     timetables = extract_timetables_from_pdf(route_short_name)
 
@@ -41,7 +63,9 @@ def extract_stop_times_content_for_regional_route(route_short_name: str) -> str:
     for timetable in timetables:
         stop_sequence_numbers: list[int] = []
         trip_ids_of_direction.append([])
-        
+        trip_headsigns = [""] * len(timetable[0])
+        furthest_headsigns = ["NONE"] * len(timetable[0])
+
         for row in timetable:
             if len(row) > 2 and ((row[0] and "DÉPART" in row[0].replace(" ", "").upper())
                     or (row[1] and "DÉPART" in row[1].replace(" ", "").upper())):
@@ -56,16 +80,27 @@ def extract_stop_times_content_for_regional_route(route_short_name: str) -> str:
             if len(trip_ids_of_direction[direction_id]) > 0:
                 
                 stop_id = None
-                for i, value in enumerate(row):
+                for j, value in enumerate(row):
+                    if not value and row[1] and (not row[0] or len(row[1]) > len(row[0])):
+                        furthest_headsigns[j] = row[1] if "/" not in row[1] else furthest_headsigns[j]
+                    elif not value and row[0]:
+                        furthest_headsigns[j] = row[0] if "/" not in row[0] else furthest_headsigns[j]
+
+                    if value and len(value) == 5:
+                        trip_headsigns[j] = furthest_headsigns[j]
+
                     if value and value.isnumeric() and len(value) == 5:
                         stop_id = value
-                    elif stop_id and value and re.match(pattern_24hr, value):
-                        stop_sequence_numbers[i] += 1
-                        stop_times_txt_content += f"{trip_ids_of_direction[direction_id][i]},{value},{value},{stop_id},{stop_sequence_numbers[i]},0,0\n"
-                    elif stop_id and value and len(value) > 5 and re.match(pattern_24hr, value[0:5]) and len(row) > i + 1 and not row[i + 1]:
-                        stop_sequence_numbers[i] += 1
-                        row[i + 1] = value[5:].strip()
-                        stop_times_txt_content += f"{trip_ids_of_direction[direction_id][i]},{value[0:5]},{value[0:5]},{stop_id},{stop_sequence_numbers[i]},0,0\n"
+
+                    elif stop_id and value and re.match(pattern_24hr, value[0:5]):
+                        if len(value) > 5 and len(row) > j + 1 and not row[j + 1]:
+                            row[j + 1] = value[5:].strip()
+                            value = value[0:5]
+
+                        stop_sequence_numbers[j] += 1
+                        stop_pickup_type = "1" if "(DÉBARQUEMENT SEULEMENT)" in trip_headsigns[j] else "0"
+                        stop_drop_off_type = "1" if "(EMBARQUEMENT SEULEMENT)" in trip_headsigns[j] else "0"
+                        stop_times_txt_content += f"{trip_ids_of_direction[direction_id][j]},{value},{value},{stop_id},{stop_sequence_numbers[j]},{stop_pickup_type},{stop_drop_off_type}\n"
 
         direction_id += 1
 
