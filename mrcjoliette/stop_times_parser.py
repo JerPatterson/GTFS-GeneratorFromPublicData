@@ -2,14 +2,15 @@ import os
 import pdfplumber
 import re
 
-MAPS_PATH = "./maps"
 SCHEDULES_PATH = "./schedules"
 GTFS_OUTPUT_PATH = "./output"
 
-KML_NAMESPACE = {
-    "kml": "http://www.opengis.net/kml/2.2"
-}
 
+def is_departure_header_row(row: list[str]) -> bool:
+    return len(row) > 2 and (
+        (row[0] and "DÉPART" in row[0].replace(" ", "").upper()) or
+        (row[1] and "DÉPART" in row[1].replace(" ", "").upper())
+    )
 
 def is_relevant_table_from_pdf(route_short_name: str, table: list[list[str]]) -> bool:
     for row in table:
@@ -30,79 +31,86 @@ def extract_timetables_from_pdf(route_short_name: str) -> list[list[list[str | N
 
     return timetables
 
-def get_trip_headsigns_from_timetable(timetable: list[list[str | None]]) -> str:
-    trip_headsigns = [""] * len(timetable[0])
-    furthest_headsigns = ["NONE"] * len(timetable[0])
-    for i, row in enumerate(timetable):
-        if i == 0:
-            if timetable[0][1] and (not timetable[0][0] or len(timetable[0][1]) > len(timetable[0][0])):
-                furthest_headsigns = [timetable[0][1].split(" ")[-1]] * len(timetable[0])
-            elif timetable[0][0]:
-                furthest_headsigns = [timetable[0][0].split(" ")[-1]] * len(timetable[0])
 
-        for j, value in enumerate(row):
-            if not value and row[1] and (not row[0] or len(row[1]) > len(row[0])):
-                furthest_headsigns[j] = row[1] if "/" not in row[1] else furthest_headsigns[j]
-            elif not value and row[0]:
-                furthest_headsigns[j] = row[0] if "/" not in row[0] else furthest_headsigns[j]
+def get_trip_ids_from_timetables(route_short_name: str, timetables: list[list[list[str | None]]]) -> list[list[str | None]]:
+    trip_ids: list[list[str | None]] = []
 
-            if value and len(value) == 5:
-                trip_headsigns[j] = furthest_headsigns[j]
+    for timetable in timetables:
+        trip_ids.append([])
 
-    return trip_headsigns
+        for row in timetable:
+            if is_departure_header_row(row):
+                for trip_number in row:
+                    if trip_number and trip_number.isnumeric():
+                        trip_ids[-1].append(f"{route_short_name}D{trip_number}")
+                    else:
+                        trip_ids[-1].append(None)
+
+    return trip_ids
+
+def get_stop_headsigns_from_timetables(timetables: list[list[list[str | None]]]) -> list[list[list[str]]]:
+    stop_headsigns = []
+
+    for timetable in timetables:
+        stop_headsigns.append([[""] * len(max(timetable, key=lambda x: len(x))) for _ in range(len(timetable))])
+        furthest_headsigns = ["NONE"] * len(timetable)
+
+        for i, row in enumerate(timetable):
+            if i == 0:
+                if row[1] and (not row[0] or len(row[1]) > len(row[0])):
+                    furthest_headsigns = [row[1]] * len(row)
+                elif row[0]:
+                    furthest_headsigns = [row[0]] * len(row)
+
+            for j, value in enumerate(row):
+                if not value and row[1] and (not row[0] or len(row[1]) > len(row[0])):
+                    furthest_headsigns[j] = row[1] if "/" not in row[1] else furthest_headsigns[j]
+                elif not value and row[0]:
+                    furthest_headsigns[j] = row[0] if "/" not in row[0] else furthest_headsigns[j]
+                
+                if value and len(value) == 5:
+                    stop_headsigns[-1][i][j] = furthest_headsigns[j]
+
+    return stop_headsigns
+
+def get_pickup_types_from_timetables(timetables: list[list[list[str | None]]]) -> list[list[list[str]]]:
+    stop_headsigns = get_stop_headsigns_from_timetables(timetables)
+    pickup_types = map(lambda x: [["1" if "(DÉBARQUEMENT SEULEMENT)" in x else "0" for x in x] for x in x], stop_headsigns)
+
+    return list(pickup_types)
+
+def get_drop_off_types_from_timetables(timetables: list[list[list[str | None]]]) -> list[list[list[str]]]:
+    stop_headsigns = get_stop_headsigns_from_timetables(timetables)
+    drop_off_types = map(lambda x: [["1" if "(EMBARQUEMENT SEULEMENT)" in x else "0" for x in x] for x in x], stop_headsigns)
+
+    return list(drop_off_types)
 
 
 def extract_stop_times_content_for_regional_route(route_short_name: str) -> str:
     timetables = extract_timetables_from_pdf(route_short_name)
 
-    direction_id = 0
-    trip_ids_of_direction: list[list[str | None]] = []
+    trip_ids = get_trip_ids_from_timetables(route_short_name, timetables)
+    pickup_types = get_pickup_types_from_timetables(timetables)
+    drop_off_types = get_drop_off_types_from_timetables(timetables)
     pattern_24hr = r"^(0[0-9]|1[0-9]|2[0-3]):[0-5][0-9]$"
 
     stop_times_txt_content = ""
-    for timetable in timetables:
-        stop_sequence_numbers: list[int] = []
-        trip_ids_of_direction.append([])
-        trip_headsigns = [""] * len(timetable[0])
-        furthest_headsigns = ["NONE"] * len(timetable[0])
+    for i, timetable in enumerate(timetables):
+        stop_sequence_numbers = [0] * len(timetable[0])
 
-        for row in timetable:
-            if len(row) > 2 and ((row[0] and "DÉPART" in row[0].replace(" ", "").upper())
-                    or (row[1] and "DÉPART" in row[1].replace(" ", "").upper())):
-                
-                for trip_number in row:
-                    stop_sequence_numbers.append(0)
-                    if trip_number and trip_number.isnumeric():    
-                        trip_ids_of_direction[-1].append(f"{route_short_name}D{trip_number}")
-                    else:
-                        trip_ids_of_direction[-1].append(None)
+        for j, row in enumerate(timetable):
+            stop_id = None
+            for k, (trip_id, value, pickup_type, drop_off_type) in enumerate(zip(trip_ids[i], row, pickup_types[i][j], drop_off_types[i][j])):
+                if value and value.isnumeric() and len(value) == 5:
+                    stop_id = value
 
-            if len(trip_ids_of_direction[direction_id]) > 0:
-                
-                stop_id = None
-                for j, value in enumerate(row):
-                    if not value and row[1] and (not row[0] or len(row[1]) > len(row[0])):
-                        furthest_headsigns[j] = row[1] if "/" not in row[1] else furthest_headsigns[j]
-                    elif not value and row[0]:
-                        furthest_headsigns[j] = row[0] if "/" not in row[0] else furthest_headsigns[j]
+                elif stop_id and value and re.match(pattern_24hr, value[0:5]):
+                    if len(value) > 5 and len(row) > k + 1 and not row[k + 1]:
+                        row[k + 1] = value[5:].strip()
+                        value = value[0:5]
 
-                    if value and len(value) == 5:
-                        trip_headsigns[j] = furthest_headsigns[j]
-
-                    if value and value.isnumeric() and len(value) == 5:
-                        stop_id = value
-
-                    elif stop_id and value and re.match(pattern_24hr, value[0:5]):
-                        if len(value) > 5 and len(row) > j + 1 and not row[j + 1]:
-                            row[j + 1] = value[5:].strip()
-                            value = value[0:5]
-
-                        stop_sequence_numbers[j] += 1
-                        stop_pickup_type = "1" if "(DÉBARQUEMENT SEULEMENT)" in trip_headsigns[j] else "0"
-                        stop_drop_off_type = "1" if "(EMBARQUEMENT SEULEMENT)" in trip_headsigns[j] else "0"
-                        stop_times_txt_content += f"{trip_ids_of_direction[direction_id][j]},{value},{value},{stop_id},{stop_sequence_numbers[j]},{stop_pickup_type},{stop_drop_off_type}\n"
-
-        direction_id += 1
+                    stop_sequence_numbers[k] += 1
+                    stop_times_txt_content += f"{trip_id},{value},{value},{stop_id},{stop_sequence_numbers[k]},{pickup_type},{drop_off_type}\n"
 
     return stop_times_txt_content
 
