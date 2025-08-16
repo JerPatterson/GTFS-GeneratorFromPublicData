@@ -5,61 +5,11 @@ SCHEDULES_PATH = "./schedules"
 GTFS_OUTPUT_PATH = "./output"
 
 
-def get_service_id_from_name(name: str) -> str:
-    name = name.upper()
-
-    if "LUN" in name and "JEU" in name:
-        return "LUNDI_JEUDI"
-    if "LUN" in name and "VEN" in name:
-        return "SEMAINE"
-    if "SAM" in name and "DIM" in name:
-        return "FIN_DE_SEMAINE"
-    if "VEN" in name:
-        return "VENDREDI"
-    if "SAM" in name:
-        return "SAMEDI"
-    if "DIM" in name:
-        return "DIMANCHE"
-    
-    return "SEMAINE"
-
-def get_trip_headsigns_from_timetable(timetable: list[list[str | None]]) -> str:
-    trip_headsigns = [""] * len(timetable[0])
-    furthest_headsigns = ["NONE"] * len(timetable[0])
-    for i, row in enumerate(timetable):
-        if i == 0:
-            if timetable[0][1] and (not timetable[0][0] or len(timetable[0][1]) > len(timetable[0][0])):
-                furthest_headsigns = [timetable[0][1].split(" ")[-1]] * len(timetable[0])
-            elif timetable[0][0]:
-                furthest_headsigns = [timetable[0][0].split(" ")[-1]] * len(timetable[0])
-
-        for j, value in enumerate(row):
-            if not value and row[1] and (not row[0] or len(row[1]) > len(row[0])):
-                furthest_headsigns[j] = row[1] if "/" not in row[1] else furthest_headsigns[j]
-            elif not value and row[0]:
-                furthest_headsigns[j] = row[0] if "/" not in row[0] else furthest_headsigns[j]
-
-            if value and len(value) == 5:
-                trip_headsigns[j] = furthest_headsigns[j]
-
-    return trip_headsigns
-
-def get_trip_direction_ids_from_timetables(timetables: list[list[list[str | None]]]) -> list[str]:
-    direction_ids = []
-    current_direction = 0
-    name_by_direction = {}
-    
-    for timetable in timetables:
-        timetable_title = timetable[0][0]
-
-        if timetable_title not in name_by_direction:
-            name_by_direction[timetable_title] = current_direction
-            current_direction += 1
-
-        direction_ids.append(name_by_direction[timetable_title])
-
-    return direction_ids
-
+def is_departure_header_row(row: list[str]) -> bool:
+    return len(row) > 2 and (
+        (row[0] and "DÉPART" in row[0].replace(" ", "").upper()) or
+        (row[1] and "DÉPART" in row[1].replace(" ", "").upper())
+    )
 
 def is_relevant_table_from_pdf(route_short_name: str, table: list[list[str]]) -> bool:
     for row in table:
@@ -80,26 +30,120 @@ def extract_timetables_from_pdf(route_short_name: str) -> list[list[list[str | N
 
     return timetables
 
-def extract_trips_content_for_regional_route(route_short_name: str) -> str:
-    timetables = extract_timetables_from_pdf(route_short_name)
-    direction_ids = get_trip_direction_ids_from_timetables(timetables)
+
+def get_service_id_from_name(name: str) -> str:
+    name = name.upper()
+
+    if "LUN" in name and "JEU" in name:
+        return "LUNDI_JEUDI"
+    if "LUN" in name and "VEN" in name:
+        return "SEMAINE"
+    if "SAM" in name and "DIM" in name:
+        return "FIN_DE_SEMAINE"
+    if "VEN" in name:
+        return "VENDREDI"
+    if "SAM" in name:
+        return "SAMEDI"
+    if "DIM" in name:
+        return "DIMANCHE"
     
-    trips_txt_content = ""
-    for i, timetable in enumerate(timetables):    
-        for j, row in enumerate(timetable):
-            trip_headsigns = get_trip_headsigns_from_timetable(timetable)
+    return "SEMAINE"
 
-            if len(row) > 2 and ((row[0] and "DÉPART" in row[0].replace(" ", "").upper())
-                    or (row[1] and "DÉPART" in row[1].replace(" ", "").upper())):
+def get_service_ids_from_timetables(timetables: list[list[list[str | None]]]) -> list[list[str]]:
+    service_ids = []
 
+    for timetable in timetables:
+        service_ids.append([""] * len(timetable[0]))
+
+        for i, row in enumerate(timetable):
+            if is_departure_header_row(row):
                 service_id = get_service_id_from_name("")
-                for service_name, trip_number, headsign in zip(timetable[j-1], row, trip_headsigns):
+                for j, service_name in enumerate(timetable[i-1]):
                     if service_name:
                         service_id = get_service_id_from_name(service_name)
-                    if trip_number and trip_number.isnumeric():
-                        trips_txt_content += f"{route_short_name},{service_id},{route_short_name}D{trip_number},{headsign},{trip_number},{direction_ids[i]},TODO\n"
+                    
+                    service_ids[-1][j] = service_id
 
                 break
+
+    return service_ids
+
+def get_trip_numbers_from_timetables(timetables: list[list[list[str | None]]]) -> list[list[str]]:
+    trip_numbers = []
+
+    for timetable in timetables:
+        trip_numbers.append([""] * len(timetable[0]))
+
+        for row in timetable:
+            if is_departure_header_row(row):
+                for j, trip_number in enumerate(row):
+                    if trip_number and trip_number.isnumeric():
+                        trip_numbers[-1][j] = str(trip_number)
+
+                break
+
+    return trip_numbers
+
+def get_trip_headsigns_from_timetables(timetables: list[list[list[str | None]]]) -> list[list[str]]:
+    trip_headsigns = []
+
+    for timetable in timetables:
+        trip_headsigns.append([""] * len(timetable[0]))
+        furthest_headsigns = ["NONE"] * len(timetable[0])
+
+        for i, row in enumerate(timetable):
+            if i == 0:
+                if row[1] and (not row[0] or len(row[1]) > len(row[0])):
+                    furthest_headsigns = [row[1].split(" ")[-1]] * len(row)
+                elif row[0]:
+                    furthest_headsigns = [row[0].split(" ")[-1]] * len(row)
+
+            for j, value in enumerate(row):
+                if not value and row[1] and (not row[0] or len(row[1]) > len(row[0])):
+                    furthest_headsigns[j] = row[1] if "/" not in row[1] else furthest_headsigns[j]
+                elif not value and row[0]:
+                    furthest_headsigns[j] = row[0] if "/" not in row[0] else furthest_headsigns[j]
+
+                if value and len(value) == 5:
+                    trip_headsigns[-1][j] = furthest_headsigns[j]
+
+    return trip_headsigns
+
+def get_direction_ids_from_timetables(timetables: list[list[list[str | None]]]) -> list[str]:
+    direction_ids = []
+    current_direction = 0
+    name_by_direction = {}
+    
+    for timetable in timetables:
+        timetable_title = timetable[0][0]
+
+        if timetable_title not in name_by_direction:
+            name_by_direction[timetable_title] = current_direction
+            current_direction += 1
+
+        direction_ids.append(name_by_direction[timetable_title])
+
+    return direction_ids
+
+
+def extract_trips_content_for_regional_route(route_short_name: str) -> str:
+    timetables = extract_timetables_from_pdf(route_short_name)
+
+    service_ids = get_service_ids_from_timetables(timetables)
+    trip_numbers = get_trip_numbers_from_timetables(timetables)
+    trip_headsigns = get_trip_headsigns_from_timetables(timetables)
+    direction_ids = get_direction_ids_from_timetables(timetables)
+
+    # Hard coded because of the structure of its timetable
+    if route_short_name == "131138":
+        service_ids[-1] = service_ids[0]
+    
+    trips_txt_content = ""
+    for i in range(len(timetables)):
+        for service_id, trip_number, trip_headsign in zip(service_ids[i], trip_numbers[i], trip_headsigns[i]):
+            if trip_number and trip_number.isnumeric():
+                trips_txt_content += f"{route_short_name},{service_id},{route_short_name}D{trip_number},{trip_headsign},{trip_number},{direction_ids[i]},TODO\n"
+
 
     return trips_txt_content
 
