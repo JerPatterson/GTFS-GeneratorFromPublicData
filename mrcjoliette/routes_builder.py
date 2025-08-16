@@ -14,7 +14,7 @@ def create_routes_content_for_all_routes() -> None:
 
 
 def create_routes_content_for_local_routes(routes_txt_content = "") -> str:
-    routes_txt_content += "A,mrcjoliette,A,Circuit A,3,https://mrcjoliette.qc.ca/transport-mrc-joliette/circuits-urbains/,FCDC12,FFFFFF\n"
+    routes_txt_content += "A,mrcjoliette,A,Circuit A,3,https://mrcjoliette.qc.ca/transport-mrc-joliette/circuits-urbains/,FCDC12,000000\n"
     routes_txt_content += "B,mrcjoliette,B,Circuit B,3,https://mrcjoliette.qc.ca/transport-mrc-joliette/circuits-urbains/,00693F,FFFFFF\n"
     routes_txt_content += "C,mrcjoliette,C,Circuit C,3,https://mrcjoliette.qc.ca/transport-mrc-joliette/circuits-urbains/,1263B0,FFFFFF\n"
     routes_txt_content += "D,mrcjoliette,D,Circuit D,3,https://mrcjoliette.qc.ca/transport-mrc-joliette/circuits-urbains/,4B0082,FFFFFF\n"

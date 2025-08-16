@@ -32,6 +32,13 @@ def extract_timetables_from_pdf(route_short_name: str) -> list[list[list[str | N
     return timetables
 
 
+def format_trip_headsign(text: str) -> str:
+    return re.sub(
+        r"[A-ZÀ-ÖØ-Ý]+",
+        lambda m: m.group(0).capitalize() if m.group(0).lower() not in {"de","du","des","la","le","les","et","au","aux"} else m.group(0).lower(),
+        text.title()
+    )
+
 def get_service_id_from_name(name: str) -> str:
     name = name.upper()
 
@@ -185,7 +192,7 @@ def extract_trips_content_for_local_route(route_short_name: str) -> str:
     trips_txt_content = ""
     for i, timetable in enumerate(timetables):
         for j in range(1, len(timetable[i][2:]) + 1):
-            if j == 0 and route_short_name == "X":
+            if j == 1 and route_short_name == "X":
                 continue
             trips_txt_content += f"{route_short_name},{"SEMAINE" if j < 3 else "REGULIER"},{route_short_name}D{j},,{j},{i},{route_short_name}DIR0V1\n"
 
@@ -208,6 +215,7 @@ def extract_trips_content_for_regional_route(route_short_name: str) -> str:
     for i in range(len(timetables)):
         for service_id, trip_number, trip_headsign, shape_id in zip(service_ids[i], trip_numbers[i], trip_headsigns[i], shape_ids[i]):
             if trip_number and trip_number.isnumeric():
+                trip_headsign = format_trip_headsign(trip_headsign)
                 trips_txt_content += f"{route_short_name},{service_id},{route_short_name}D{trip_number},{trip_headsign},{trip_number},{direction_ids[i]},{shape_id}\n"
 
 
