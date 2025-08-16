@@ -2,9 +2,9 @@
 <kml xmlns="http://www.opengis.net/kml/2.2">
   <Document>
     <name>Circuit D</name>
-    <Style id="icon-1899-0288D1DIR0V1-nodesc-normal">
+    <Style id="icon-1899-0288DDIR0V1-nodesc-normal">
       <IconStyle>
-        <color>ffD1DIR0V18802</color>
+        <color>ffDDIR0V18802</color>
         <scale>1</scale>
         <Icon>
           <href>https://www.gstatic.com/mapspro/images/stock/503-wht-blank_maps.png</href>
@@ -18,9 +18,9 @@
         <text><![CDATA[<h3>$[name]</h3>]]></text>
       </BalloonStyle>
     </Style>
-    <Style id="icon-1899-0288D1DIR0V1-nodesc-highlight">
+    <Style id="icon-1899-0288DDIR0V1-nodesc-highlight">
       <IconStyle>
-        <color>ffD1DIR0V18802</color>
+        <color>ffDDIR0V18802</color>
         <scale>1</scale>
         <Icon>
           <href>https://www.gstatic.com/mapspro/images/stock/503-wht-blank_maps.png</href>
@@ -34,14 +34,14 @@
         <text><![CDATA[<h3>$[name]</h3>]]></text>
       </BalloonStyle>
     </Style>
-    <StyleMap id="icon-1899-0288D1DIR0V1-nodesc">
+    <StyleMap id="icon-1899-0288DDIR0V1-nodesc">
       <Pair>
         <key>normal</key>
-        <styleUrl>#icon-1899-0288D1DIR0V1-nodesc-normal</styleUrl>
+        <styleUrl>#icon-1899-0288DDIR0V1-nodesc-normal</styleUrl>
       </Pair>
       <Pair>
         <key>highlight</key>
-        <styleUrl>#icon-1899-0288D1DIR0V1-nodesc-highlight</styleUrl>
+        <styleUrl>#icon-1899-0288DDIR0V1-nodesc-highlight</styleUrl>
       </Pair>
     </StyleMap>
     <Style id="line-9C27B0-5000-nodesc-normal">
@@ -73,7 +73,7 @@
       </Pair>
     </StyleMap>
     <Placemark>
-      <name>D1DIR0V1</name>
+      <name>DDIR0V1</name>
       <styleUrl>#line-9C27B0-5000-nodesc</styleUrl>
       <LineString>
         <tessellate>1</tessellate>
@@ -428,7 +428,7 @@
     </Placemark>
     <Placemark>
       <name>1000 - Terminus MRC Joliette</name>
-      <styleUrl>#icon-1899-0288D1DIR0V1-nodesc</styleUrl>
+      <styleUrl>#icon-1899-0288DDIR0V1-nodesc</styleUrl>
       <Point>
         <coordinates>
           -73.449802,46.021497,0
@@ -437,7 +437,7 @@
     </Placemark>
     <Placemark>
       <name>1350 - St-Pierre Nord / Manseau</name>
-      <styleUrl>#icon-1899-0288D1DIR0V1-nodesc</styleUrl>
+      <styleUrl>#icon-1899-0288DDIR0V1-nodesc</styleUrl>
       <Point>
         <coordinates>
           -73.447381,46.020076,0
@@ -446,7 +446,7 @@
     </Placemark>
     <Placemark>
       <name>1351 - St-Pierre Sud / Lanaudière</name>
-      <styleUrl>#icon-1899-0288D1DIR0V1-nodesc</styleUrl>
+      <styleUrl>#icon-1899-0288DDIR0V1-nodesc</styleUrl>
       <Point>
         <coordinates>
           -73.444756,46.018194,0
@@ -455,7 +455,7 @@
     </Placemark>
     <Placemark>
       <name>1352 - St-Pierre S. / Piette</name>
-      <styleUrl>#icon-1899-0288D1DIR0V1-nodesc</styleUrl>
+      <styleUrl>#icon-1899-0288DDIR0V1-nodesc</styleUrl>
       <Point>
         <coordinates>
           -73.442509,46.016587,0
@@ -464,7 +464,7 @@
     </Placemark>
     <Placemark>
       <name>1353 - Piette / Beaudry S.</name>
-      <styleUrl>#icon-1899-0288D1DIR0V1-nodesc</styleUrl>
+      <styleUrl>#icon-1899-0288DDIR0V1-nodesc</styleUrl>
       <Point>
         <coordinates>
           -73.444101,46.015366,0
@@ -473,7 +473,7 @@
     </Placemark>
     <Placemark>
       <name>1355 - Piette / Sir Mathias-Tellier</name>
-      <styleUrl>#icon-1899-0288D1DIR0V1-nodesc</styleUrl>
+      <styleUrl>#icon-1899-0288DDIR0V1-nodesc</styleUrl>
       <Point>
         <coordinates>
           -73.446124,46.01392,0
@@ -482,7 +482,7 @@
     </Placemark>
     <Placemark>
       <name>1400 - Piette / De Lorimier</name>
-      <styleUrl>#icon-1899-0288D1DIR0V1-nodesc</styleUrl>
+      <styleUrl>#icon-1899-0288DDIR0V1-nodesc</styleUrl>
       <Point>
         <coordinates>
           -73.448406,46.01228,0
@@ -491,7 +491,7 @@
     </Placemark>
     <Placemark>
       <name>1401 - Piette / Boisvert</name>
-      <styleUrl>#icon-1899-0288D1DIR0V1-nodesc</styleUrl>
+      <styleUrl>#icon-1899-0288DDIR0V1-nodesc</styleUrl>
       <Point>
         <coordinates>
           -73.450637,46.010636,0
@@ -500,7 +500,7 @@
     </Placemark>
     <Placemark>
       <name>1402 - Boisvert / Perreault</name>
-      <styleUrl>#icon-1899-0288D1DIR0V1-nodesc</styleUrl>
+      <styleUrl>#icon-1899-0288DDIR0V1-nodesc</styleUrl>
       <Point>
         <coordinates>
           -73.449803,46.009844,0
@@ -509,7 +509,7 @@
     </Placemark>
     <Placemark>
       <name>1403 - Perreault / Delorimier</name>
-      <styleUrl>#icon-1899-0288D1DIR0V1-nodesc</styleUrl>
+      <styleUrl>#icon-1899-0288DDIR0V1-nodesc</styleUrl>
       <Point>
         <coordinates>
           -73.447424,46.011304,0
@@ -518,7 +518,7 @@
     </Placemark>
     <Placemark>
       <name>1404 - Delorimier / Lépine</name>
-      <styleUrl>#icon-1899-0288D1DIR0V1-nodesc</styleUrl>
+      <styleUrl>#icon-1899-0288DDIR0V1-nodesc</styleUrl>
       <Point>
         <coordinates>
           -73.446753,46.01094,0
@@ -527,7 +527,7 @@
     </Placemark>
     <Placemark>
       <name>1405 - Frenette / Lépine</name>
-      <styleUrl>#icon-1899-0288D1DIR0V1-nodesc</styleUrl>
+      <styleUrl>#icon-1899-0288DDIR0V1-nodesc</styleUrl>
       <Point>
         <coordinates>
           -73.44714,46.009759,0
@@ -536,7 +536,7 @@
     </Placemark>
     <Placemark>
       <name>1406 - Frenette / Raoul-Charrette</name>
-      <styleUrl>#icon-1899-0288D1DIR0V1-nodesc</styleUrl>
+      <styleUrl>#icon-1899-0288DDIR0V1-nodesc</styleUrl>
       <Point>
         <coordinates>
           -73.44389,46.007626,0
@@ -545,7 +545,7 @@
     </Placemark>
     <Placemark>
       <name>1407 - Raoul Charrette (face Hydro Québec)</name>
-      <styleUrl>#icon-1899-0288D1DIR0V1-nodesc</styleUrl>
+      <styleUrl>#icon-1899-0288DDIR0V1-nodesc</styleUrl>
       <Point>
         <coordinates>
           -73.44188,46.008558,0
@@ -554,7 +554,7 @@
     </Placemark>
     <Placemark>
       <name>1408 - Raoul Charrette (face Intelcom)</name>
-      <styleUrl>#icon-1899-0288D1DIR0V1-nodesc</styleUrl>
+      <styleUrl>#icon-1899-0288DDIR0V1-nodesc</styleUrl>
       <Point>
         <coordinates>
           -73.43755,46.010687,0
@@ -563,7 +563,7 @@
     </Placemark>
     <Placemark>
       <name>1409 - Raoul Charrette / St-Pierre Sud</name>
-      <styleUrl>#icon-1899-0288D1DIR0V1-nodesc</styleUrl>
+      <styleUrl>#icon-1899-0288DDIR0V1-nodesc</styleUrl>
       <Point>
         <coordinates>
           -73.435564,46.011913,0
@@ -572,7 +572,7 @@
     </Placemark>
     <Placemark>
       <name>1451 - St-Pierre Sud (en face du 1015 )</name>
-      <styleUrl>#icon-1899-0288D1DIR0V1-nodesc</styleUrl>
+      <styleUrl>#icon-1899-0288DDIR0V1-nodesc</styleUrl>
       <Point>
         <coordinates>
           -73.428241,46.008685,0
@@ -581,7 +581,7 @@
     </Placemark>
     <Placemark>
       <name>1452 - St-Pierre Sud / Albert Lussier</name>
-      <styleUrl>#icon-1899-0288D1DIR0V1-nodesc</styleUrl>
+      <styleUrl>#icon-1899-0288DDIR0V1-nodesc</styleUrl>
       <Point>
         <coordinates>
           -73.425653,46.007189,0
@@ -590,7 +590,7 @@
     </Placemark>
     <Placemark>
       <name>1453 - Albert-Lussier / Alfred Charbonneau</name>
-      <styleUrl>#icon-1899-0288D1DIR0V1-nodesc</styleUrl>
+      <styleUrl>#icon-1899-0288DDIR0V1-nodesc</styleUrl>
       <Point>
         <coordinates>
           -73.428245,46.005176,0
@@ -599,7 +599,7 @@
     </Placemark>
     <Placemark>
       <name>1454 - Albert-Lussier / Bacon</name>
-      <styleUrl>#icon-1899-0288D1DIR0V1-nodesc</styleUrl>
+      <styleUrl>#icon-1899-0288DDIR0V1-nodesc</styleUrl>
       <Point>
         <coordinates>
           -73.430053,46.004339,0
@@ -608,7 +608,7 @@
     </Placemark>
     <Placemark>
       <name>1455 - Bacon / Chartier</name>
-      <styleUrl>#icon-1899-0288D1DIR0V1-nodesc</styleUrl>
+      <styleUrl>#icon-1899-0288DDIR0V1-nodesc</styleUrl>
       <Point>
         <coordinates>
           -73.429711,46.003491,0
@@ -617,7 +617,7 @@
     </Placemark>
     <Placemark>
       <name>1456 - Bacon / Alban Dionne</name>
-      <styleUrl>#icon-1899-0288D1DIR0V1-nodesc</styleUrl>
+      <styleUrl>#icon-1899-0288DDIR0V1-nodesc</styleUrl>
       <Point>
         <coordinates>
           -73.42857,46.002389,0
@@ -626,7 +626,7 @@
     </Placemark>
     <Placemark>
       <name>1457 - Bacon / Antonio-Lambert</name>
-      <styleUrl>#icon-1899-0288D1DIR0V1-nodesc</styleUrl>
+      <styleUrl>#icon-1899-0288DDIR0V1-nodesc</styleUrl>
       <Point>
         <coordinates>
           -73.426532,46.001572,0
@@ -635,7 +635,7 @@
     </Placemark>
     <Placemark>
       <name>1458 - Bacon / St-Pierre S.</name>
-      <styleUrl>#icon-1899-0288D1DIR0V1-nodesc</styleUrl>
+      <styleUrl>#icon-1899-0288DDIR0V1-nodesc</styleUrl>
       <Point>
         <coordinates>
           -73.423308,46.003009,0
@@ -644,7 +644,7 @@
     </Placemark>
     <Placemark>
       <name>1462 - St-Pierre Sud / André-Mathieu</name>
-      <styleUrl>#icon-1899-0288D1DIR0V1-nodesc</styleUrl>
+      <styleUrl>#icon-1899-0288DDIR0V1-nodesc</styleUrl>
       <Point>
         <coordinates>
           -73.423889,46.005671,0
@@ -653,7 +653,7 @@
     </Placemark>
     <Placemark>
       <name>1450 - St-Pierre Sud (en face du Harnois)</name>
-      <styleUrl>#icon-1899-0288D1DIR0V1-nodesc</styleUrl>
+      <styleUrl>#icon-1899-0288DDIR0V1-nodesc</styleUrl>
       <Point>
         <coordinates>
           -73.430809,46.010095,0
@@ -662,7 +662,7 @@
     </Placemark>
     <Placemark>
       <name>1463 - Curé-Majeau / Base-de-Roc</name>
-      <styleUrl>#icon-1899-0288D1DIR0V1-nodesc</styleUrl>
+      <styleUrl>#icon-1899-0288DDIR0V1-nodesc</styleUrl>
       <Point>
         <coordinates>
           -73.426804,46.012717,0
@@ -671,7 +671,7 @@
     </Placemark>
     <Placemark>
       <name>1464 - Base-de-Roc / De Salaberry</name>
-      <styleUrl>#icon-1899-0288D1DIR0V1-nodesc</styleUrl>
+      <styleUrl>#icon-1899-0288DDIR0V1-nodesc</styleUrl>
       <Point>
         <coordinates>
           -73.434755,46.016966,0
@@ -680,7 +680,7 @@
     </Placemark>
     <Placemark>
       <name>1461 - Base-de-Roc / Taché</name>
-      <styleUrl>#icon-1899-0288D1DIR0V1-nodesc</styleUrl>
+      <styleUrl>#icon-1899-0288DDIR0V1-nodesc</styleUrl>
       <Point>
         <coordinates>
           -73.436485,46.018316,0
@@ -689,7 +689,7 @@
     </Placemark>
     <Placemark>
       <name>1465 - Base-de-Roc / Mgr. Forbes</name>
-      <styleUrl>#icon-1899-0288D1DIR0V1-nodesc</styleUrl>
+      <styleUrl>#icon-1899-0288DDIR0V1-nodesc</styleUrl>
       <Point>
         <coordinates>
           -73.438382,46.019682,0
@@ -698,7 +698,7 @@
     </Placemark>
     <Placemark>
       <name>1466 - St-Barthélémy S. / De Lanaudière</name>
-      <styleUrl>#icon-1899-0288D1DIR0V1-nodesc</styleUrl>
+      <styleUrl>#icon-1899-0288DDIR0V1-nodesc</styleUrl>
       <Point>
         <coordinates>
           -73.439877,46.021466,0
@@ -707,7 +707,7 @@
     </Placemark>
     <Placemark>
       <name>1467 - De Lanaudière / St-Antoine</name>
-      <styleUrl>#icon-1899-0288D1DIR0V1-nodesc</styleUrl>
+      <styleUrl>#icon-1899-0288DDIR0V1-nodesc</styleUrl>
       <Point>
         <coordinates>
           -73.436946,46.023175,0
@@ -716,7 +716,7 @@
     </Placemark>
     <Placemark>
       <name>1468 - Père Wilfrid Corbeil / Centre Culturel</name>
-      <styleUrl>#icon-1899-0288D1DIR0V1-nodesc</styleUrl>
+      <styleUrl>#icon-1899-0288DDIR0V1-nodesc</styleUrl>
       <Point>
         <coordinates>
           -73.435946,46.024655,0
@@ -725,7 +725,7 @@
     </Placemark>
     <Placemark>
       <name>1015 - St-Charles-Borromée Nord / St-Viateur</name>
-      <styleUrl>#icon-1899-0288D1DIR0V1-nodesc</styleUrl>
+      <styleUrl>#icon-1899-0288DDIR0V1-nodesc</styleUrl>
       <Point>
         <coordinates>
           -73.43806,46.02682,0
@@ -734,7 +734,7 @@
     </Placemark>
     <Placemark>
       <name>1469 - St-Louis / Ste-Anne</name>
-      <styleUrl>#icon-1899-0288D1DIR0V1-nodesc</styleUrl>
+      <styleUrl>#icon-1899-0288DDIR0V1-nodesc</styleUrl>
       <Point>
         <coordinates>
           -73.44023,46.027159,0
@@ -743,7 +743,7 @@
     </Placemark>
     <Placemark>
       <name>1014 - St-Louis / St-Marc</name>
-      <styleUrl>#icon-1899-0288D1DIR0V1-nodesc</styleUrl>
+      <styleUrl>#icon-1899-0288DDIR0V1-nodesc</styleUrl>
       <Point>
         <coordinates>
           -73.442263,46.025849,0

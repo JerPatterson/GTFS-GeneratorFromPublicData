@@ -73,7 +73,7 @@
       </Pair>
     </StyleMap>
     <Placemark>
-      <name>X1DIR0V1</name>
+      <name>XDIR0V1</name>
       <styleUrl>#line-000000-5000-nodesc</styleUrl>
       <LineString>
         <tessellate>1</tessellate>

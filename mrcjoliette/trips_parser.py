@@ -128,7 +128,7 @@ def get_direction_ids_from_timetables(timetables: list[list[list[str | None]]]) 
 
 def get_stop_ids_of_trips_from_timetables(timetables: list[list[list[str | None]]]) -> list[list[list[str]]]:
     stop_ids: list[list[list[str]]] = []
-    pattern_24hr = r"^(0[0-9]|1[0-9]|2[0-3]):[0-5][0-9]$"
+    pattern_24hr = r"^(0[0-9]|1[0-9]|2[0-3])(:|;)[0-5][0-9]$"
 
     for i, timetable in enumerate(timetables):
         stop_ids.append([[] for _ in range(len(timetable[i]))])
@@ -139,7 +139,7 @@ def get_stop_ids_of_trips_from_timetables(timetables: list[list[list[str | None]
                 if value and value.isnumeric() and len(value) == 5:
                     stop_id = value
 
-                elif stop_id and value and re.match(pattern_24hr, value[0:5]):
+                elif value and re.match(pattern_24hr, value[0:5]):
                     if len(value) > 5 and len(row) > j + 1 and not row[j + 1]:
                         row[j + 1] = value[5:].strip()
                         value = value[0:5]
@@ -150,7 +150,9 @@ def get_stop_ids_of_trips_from_timetables(timetables: list[list[list[str | None]
 
 def get_shape_ids_from_timetables(route_short_name: str, timetables: list[list[list[str | None]]]) -> list[str | None]:
     shape_ids = []
+
     stop_ids_of_trips = get_stop_ids_of_trips_from_timetables(timetables)
+    direction_ids = get_direction_ids_from_timetables(timetables)
 
     for i, timetable in enumerate(timetables):
         shape_ids.append([""] * len(timetable[i]))
@@ -160,7 +162,7 @@ def get_shape_ids_from_timetables(route_short_name: str, timetables: list[list[l
         unique_stop_counts.remove(0)
 
         for j, stop_count in enumerate(sorted(unique_stop_counts, reverse=True)):
-            shape_id_by_stop_count[stop_count] = f"{route_short_name}DIR{i}V{j + 1}"
+            shape_id_by_stop_count[stop_count] = f"{route_short_name}DIR{direction_ids[i]}V{j + 1}"
 
         for j, stop_ids in enumerate(stop_ids_of_trips[i]):
             if len(stop_ids) in shape_id_by_stop_count:
@@ -183,6 +185,8 @@ def extract_trips_content_for_local_route(route_short_name: str) -> str:
     trips_txt_content = ""
     for i, timetable in enumerate(timetables):
         for j in range(1, len(timetable[i][2:]) + 1):
+            if j == 0 and route_short_name == "X":
+                continue
             trips_txt_content += f"{route_short_name},{"SEMAINE" if j < 3 else "REGULIER"},{route_short_name}D{j},,{j},{i},{route_short_name}DIR0V1\n"
 
     return trips_txt_content

@@ -100,7 +100,9 @@ def extract_stop_times_content_for_local_route(route_short_name: str) -> str:
         for i, row in enumerate(timetable[1:]):
             stop_id = row[1]
             for j, stop_time in enumerate(row[2:]):
-                stop_times_txt_content += f"{route_short_name}D{i + 1},{stop_time},{stop_time},{stop_id},{j + 1},0,0\n"
+                if j == 0 and route_short_name == "X":
+                    continue
+                stop_times_txt_content += f"{route_short_name}D{j + 1},{stop_time}:00,{stop_time}:00,{stop_id},{i + 1},0,0\n"
 
     return stop_times_txt_content
 
@@ -110,16 +112,20 @@ def extract_stop_times_content_for_regional_route(route_short_name: str) -> str:
     trip_ids = get_trip_ids_from_timetables(route_short_name, timetables)
     pickup_types = get_pickup_types_from_timetables(timetables)
     drop_off_types = get_drop_off_types_from_timetables(timetables)
-    pattern_24hr = r"^(0[0-9]|1[0-9]|2[0-3]):[0-5][0-9]$"
+    pattern_24hr = r"^(0[0-9]|1[0-9]|2[0-3])(:|;)[0-5][0-9]$"
+    pattern_midnight = r"^00(:|;)[0-5][0-9]$"
 
     stop_times_txt_content = ""
     for i, timetable in enumerate(timetables):
         stop_sequence_numbers = [0] * len(timetable[0])
 
+        previous_stop_id = None
         for j, row in enumerate(timetable):
             stop_id = None
             for k, (trip_id, value, pickup_type, drop_off_type) in enumerate(zip(trip_ids[i], row, pickup_types[i][j], drop_off_types[i][j])):
                 if value and value.isnumeric() and len(value) == 5:
+                    if previous_stop_id == value:
+                        break
                     stop_id = value
 
                 elif stop_id and value and re.match(pattern_24hr, value[0:5]):
@@ -127,8 +133,14 @@ def extract_stop_times_content_for_regional_route(route_short_name: str) -> str:
                         row[k + 1] = value[5:].strip()
                         value = value[0:5]
 
+                    if re.match(pattern_midnight, value):
+                        value = f"24:{value[3:5]}"
+
                     stop_sequence_numbers[k] += 1
-                    stop_times_txt_content += f"{trip_id},{value},{value},{stop_id},{stop_sequence_numbers[k]},{pickup_type},{drop_off_type}\n"
+                    value = value.replace(';', ':')
+                    stop_times_txt_content += f"{trip_id},{value}:00,{value}:00,{stop_id},{stop_sequence_numbers[k]},{pickup_type},{drop_off_type}\n"
+                
+            previous_stop_id = stop_id
 
     return stop_times_txt_content
 
